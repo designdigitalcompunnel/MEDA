@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Learn how the Moffat Economic Development Authority supports Craig and Moffat County, and find public records and board contact information.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<title>Moffat Economic Development Authority | MEDA</title>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+/* MEDA theme tokens with the template layout and motion rules. */
+:root{
+  --p1:#002D74; --p2:#144C9B; --p3:#145DC1; --p4:#3E83DC; --p5:#E7F1FF;
+  --acc:#145DC1; --acc-lt:#A9D7FF; --mint:#A9D7FF; --mint-lt:#EAF3FF; --white:#fff;
+  --text:#132740; --g-d:#25364A; --g-m:#4C5E73; --g-l:#D4E0EF; --g-ul:#F2F6FB;
+  --warm:#2C5C99; --plum:#254E89; --cta:#002D74; --nav-ink:#1B3252;
+
+  --line:rgba(3,31,87,.14);
+  --line-lt:rgba(255,255,255,.24);
+  --r-lg:32px; --r-md:22px; --r-sm:14px;
+  --display:'Bricolage Grotesque',system-ui,sans-serif;
+  --accent-font:'Fraunces',Georgia,serif;
+  --body:'Open Sans',system-ui,-apple-system,sans-serif;
+  --pad:clamp(20px,5vw,72px); --gap:clamp(14px,1.6vw,22px);
+  --navh:116px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--g-d);font-family:var(--body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+input{font:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:var(--pad)}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height:.99;margin:0;color:var(--p1)}
+.it{font-family:var(--accent-font);font-style:italic;font-weight:300;letter-spacing:-.02em}
+.lede{font-size:clamp(16px,1.3vw,19px);color:var(--g-m);max-width:56ch;line-height:1.65;font-weight:300}
+.n{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--g-m)}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:8px 15px 8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--p5);color:var(--p1)}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.on-dark .eyebrow{border-color:var(--line-lt);background:rgba(255,255,255,.12);color:#fff;backdrop-filter:blur(6px)}
+.on-dark .eyebrow::before{background:var(--mint)}
+.on-dark h1,.on-dark h2,.on-dark h3,.on-dark h4{color:#fff}
+.on-dark .lede{color:#C5D4E6}
+.on-dark .n{color:rgba(255,255,255,.72)}
+
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--p1),var(--p3))}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* keep heads in frame on people photography */
+.face-safe{object-position:center 18% !important}
+
+/* ── Buttons ───────────────────────────────── */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:13px 17px 13px 24px;border-radius:999px;font-weight:600;font-size:15.5px;
+  background:var(--p1);color:#fff;transition:transform .28s cubic-bezier(.2,.8,.3,1),background .28s}
+.btn .dot{width:30px;height:30px;flex:none;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;transition:transform .28s cubic-bezier(.2,.8,.3,1)}
+.btn:hover{transform:translateY(-2px);background:var(--p3)}
+.btn:hover .dot{transform:translateX(3px) rotate(45deg)}
+.btn--ghost{background:transparent;color:var(--p1);border:1.5px solid var(--line)}
+.btn--ghost .dot{background:var(--p1);color:#fff}
+.btn--ghost:hover{background:var(--p5)}
+.btn--white{background:#fff;color:var(--p1)}
+.btn--white .dot{background:var(--acc);color:#fff}
+.btn--white:hover{background:var(--p5)}
+.btn--glass{background:rgba(255,255,255,.14);color:#fff;border:1.5px solid rgba(255,255,255,.45);backdrop-filter:blur(8px)}
+.btn--glass .dot{background:#fff;color:var(--p1)}
+.btn--glass:hover{background:rgba(255,255,255,.26)}
+
+/* ── NAV ───────────────────────────────────── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:80;padding:14px 0}
+.nav-inner{display:flex;align-items:center;gap:12px;border-radius:999px;padding:9px 10px 9px 16px;
+  background:var(--white);border:1px solid var(--g-l);box-shadow:0 12px 34px -22px rgba(3,31,87,.45);
+  transition:box-shadow .35s,border-color .35s,background .35s}
+.nav.solid .nav-inner{box-shadow:0 16px 40px -20px rgba(3,31,87,.55);border-color:#D9DFE8}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand img{height:48px;width:auto;max-height:none}
+.lock{display:flex;flex-direction:column;line-height:1}
+.lock b{font-family:var(--display);font-size:14px;font-weight:800;letter-spacing:-.02em;color:#fff;white-space:nowrap}
+.lock span{font-size:9.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--mint);margin-top:5px}
+.nav-links{display:flex;gap:2px;margin-left:clamp(8px,1.1vw,18px);margin-right:auto;align-items:center}
+.nav-links a{padding:10px 9px;border-radius:999px;font-size:14.5px;font-weight:600;color:var(--nav-ink);white-space:nowrap;transition:background .2s,color .2s}
+.nav-links a:hover{background:var(--p5)}
+/* the page you are on */
+.nav-links a.here{background:var(--mint);color:var(--nav-ink);font-weight:700}
+.nav-links a.here:hover{background:var(--mint);filter:brightness(1.04)}
+.nav-cta{display:flex;gap:8px;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.42);display:grid;place-items:center;color:#fff;transition:all .25s}
+.icon-btn:hover{background:rgba(255,255,255,.2)}
+.nav .icon-btn{border:0;width:38px;height:38px;color:var(--nav-ink)}
+.nav .icon-btn:hover{background:var(--p5)}
+.nav .btn{padding:10px 10px 10px 18px;font-size:14.5px;background:var(--cta);color:#fff;white-space:nowrap}
+.nav .btn .dot{width:30px;height:30px;background:var(--acc);color:#fff}
+.nav .btn:hover{background:#144C9B}
+.burger{display:none}
+@media(max-width:1100px){.nav-links{display:none}.burger{display:grid}.nav-cta{margin-left:auto}}
+/* 561–900px: the mark carries the brand so the CTA keeps its full label */
+/* the full logo carries the brand on the white bar */
+.nav .lock{display:none}
+/* under 560px the pill has no room for the CTA — the drawer and hero carry it instead */
+@media(max-width:900px){.nav-inner{padding:8px 10px 8px 16px}.brand img{height:42px}:root{--navh:104px}}
+@media(max-width:560px){.nav .btn{display:none}.brand img{height:38px}:root{--navh:96px}}
+
+/* ── 01 HERO with video ────────────────────── */
+.topshell{position:relative;isolation:isolate;padding-top:calc(var(--navh) + clamp(40px,7vw,110px));padding-bottom:clamp(30px,4vw,54px);overflow:hidden}
+.topshell-bg{position:absolute;inset:0;z-index:-2;background:var(--p1)}
+.topshell-bg video,.topshell-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.topshell-bg::after{content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(115% 92% at 18% 42%, rgba(7,19,42,.86) 0%, rgba(3,31,87,.56) 52%, rgba(3,31,87,.28) 80%),
+    linear-gradient(180deg, rgba(7,19,42,.80) 0%, rgba(3,31,87,.54) 40%, rgba(7,19,42,.96) 100%)}
+.topshell-grain{position:absolute;inset:0;z-index:-1;opacity:.34;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:26px 26px}
+.hero{position:relative;z-index:4}
+.hero h1,.hero .lede{text-shadow:0 2px 18px rgba(7,19,42,.75),0 1px 3px rgba(7,19,42,.5)}
+.hero h1{font-size:clamp(42px,7.6vw,120px);letter-spacing:-.045em;margin:22px 0 0;max-width:16ch;color:#fff}
+.hero h1 .it{color:var(--mint)}
+.hero-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:clamp(24px,4vw,60px);align-items:end;margin-top:30px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero-side{border:1px solid rgba(255,255,255,.3);border-radius:var(--r-md);background:rgba(255,255,255,.12);backdrop-filter:blur(10px);overflow:hidden}
+.hero-side .ph{height:180px}
+.hero-side .in{padding:20px}
+.hero-side .k{font-family:var(--display);font-size:clamp(28px,3vw,40px);line-height:1;letter-spacing:-.05em;color:#fff}
+.hero-side .k span{color:var(--mint)}
+.hero-side p{margin:10px 0 0;font-size:14px;color:#C5D4E6;line-height:1.55;font-weight:300}
+.hero-side a{display:inline-flex;gap:9px;align-items:center;margin-top:16px;font-weight:600;font-size:14.5px;color:var(--mint)}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);margin-top:clamp(28px,3.4vw,46px)}
+.strip .ph{border-radius:var(--r-md);height:clamp(130px,14vw,190px);border:1px solid rgba(255,255,255,.24)}
+.strip .ph img{transition:transform .7s cubic-bezier(.2,.8,.3,1)}
+.strip .ph:hover img{transform:scale(1.06)}
+.strip .cap{position:absolute;left:12px;bottom:10px;z-index:2;color:#fff;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;text-shadow:0 1px 12px rgba(3,31,87,.95)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.strip{grid-template-columns:1fr 1fr}}
+
+/* Marquee */
+.marquee{border-block:1px solid var(--g-l);padding:20px 0;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--g-m);margin-bottom:14px}
+.marquee-track{display:flex;gap:44px;width:max-content;animation:slide 46s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-family:var(--display);font-size:clamp(16px,1.6vw,22px);font-weight:600;letter-spacing:-.03em;color:var(--p3);white-space:nowrap;opacity:.6}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+.sec{padding:clamp(52px,6.6vw,110px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(26px,3.2vw,48px)}
+.sec-head h2{font-size:clamp(32px,4.6vw,70px);max-width:15ch}
+.sec-head h2 .it{color:var(--acc)}
+.sec-head .lede{margin-top:14px}
+
+/* ── 02 AUDIENCE ───────────────────────────── */
+.paths{display:flex;gap:10px;flex-wrap:wrap}
+.path{padding:12px 21px;border-radius:999px;border:1.5px solid var(--g-l);font-weight:600;font-size:15.5px;color:var(--g-d);background:#fff;
+  transition:all .25s cubic-bezier(.2,.8,.3,1)}
+.path:hover{border-color:var(--acc);color:var(--acc);transform:translateY(-2px)}
+.path[aria-selected="true"]{background:var(--p1);border-color:var(--p1);color:#fff}
+.path-panel{margin-top:22px;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--g-l);background:var(--p5);
+  display:grid;grid-template-columns:.85fr 1.15fr}
+.path-media{position:relative;min-height:320px;background:var(--p1)}
+.path-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.path-media .cop{position:absolute;inset:auto 0 0 0;z-index:2;padding:24px;background:linear-gradient(180deg,transparent,rgba(3,31,87,.95))}
+.path-media .who{font-family:var(--display);font-size:clamp(20px,2vw,29px);letter-spacing:-.035em;line-height:1.05;color:#fff}
+.path-media p{margin:10px 0 0;color:#C5D4E6;font-size:14.5px;font-weight:300}
+.path-links{padding:clamp(18px,2.2vw,28px);display:grid;gap:10px;align-content:center}
+.path-link{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:var(--r-md);background:#fff;border:1px solid transparent;transition:all .25s}
+.path-link .num{font-family:var(--display);font-size:13px;color:var(--g-m);width:22px;flex:none}
+.path-link strong{font-weight:700;font-size:16px;color:var(--p1)}
+.path-link em{display:block;font-size:13.5px;color:var(--g-m);font-style:normal;font-weight:300}
+.path-link .arrow{margin-left:auto;color:var(--acc);transition:transform .25s}
+.path-link:hover{border-color:var(--acc-lt);transform:translateX(4px)}
+.path-link:hover .arrow{transform:translateX(4px)}
+@media(max-width:860px){.path-panel{grid-template-columns:1fr}.path-media{min-height:260px}}
+
+/* ── 03 FINDER ─────────────────────────────── */
+.finder{border-radius:var(--r-lg);padding:clamp(28px,4.2vw,70px);position:relative;overflow:hidden;isolation:isolate}
+.finder-bg{position:absolute;inset:0;z-index:-2;background:var(--p2)}
+.finder-bg img{width:100%;height:100%;object-fit:cover;object-position:center 25%;mix-blend-mode:luminosity;opacity:.5}
+.finder-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(3,31,87,.95) 20%,rgba(25,75,156,.86) 100%)}
+.finder h2{font-size:clamp(29px,4.2vw,60px);max-width:14ch}
+.finder h2 .it{color:var(--mint)}
+.searchbar{margin-top:26px;display:flex;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:8px 8px 8px 24px;max-width:820px}
+.searchbar > svg{flex:none;color:var(--g-m)}
+.searchbar .btn .dot svg{color:#fff}
+.searchbar input{flex:1;border:0;background:none;outline:none;font-size:clamp(15px,1.4vw,18px);color:var(--p1);padding:12px 0}
+.searchbar input::placeholder{color:var(--g-m)}
+.pops{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px;align-items:center}
+.pops .lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--mint);margin-right:4px}
+.chip{padding:9px 16px;border-radius:999px;border:1px solid var(--line-lt);color:#fff;font-size:14px;transition:all .22s;backdrop-filter:blur(6px)}
+.chip:hover{background:var(--mint);color:var(--p1);border-color:var(--mint)}
+.finder-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px;padding-top:26px;border-top:1px solid var(--line-lt);font-size:14px;color:#C5D4E6;font-weight:300}
+.finder-meta b{color:#fff;font-family:var(--display);font-size:16px}
+
+/* ── 04 PILLARS — photo panel + solid text panel (figure/ground separation) ── */
+.pillars{display:grid;gap:var(--gap);grid-template-columns:repeat(4,1fr)}
+.pillar{display:flex;flex-direction:column;border-radius:var(--r-lg);overflow:hidden;background:var(--white);
+  border:1px solid var(--g-l);transition:transform .35s cubic-bezier(.2,.8,.3,1),box-shadow .35s,border-color .35s}
+.pillar:hover{transform:translateY(-8px);box-shadow:0 24px 50px -26px rgba(7,19,42,.5);border-color:var(--g-m)}
+.pillar .pic{position:relative;height:clamp(180px,17vw,224px);overflow:hidden;background:var(--p1)}
+.pillar .pic img{width:100%;height:100%;object-fit:cover;object-position:center 25%;transition:transform .7s cubic-bezier(.2,.8,.3,1)}
+.pillar:hover .pic img{transform:scale(1.06)}
+.pillar .no{position:absolute;left:14px;top:14px;z-index:2;background:#fff;color:var(--p1);
+  padding:6px 12px;border-radius:99px;font-family:var(--body);font-size:11px;font-weight:700;letter-spacing:.12em}
+.pillar .bar{height:5px;width:100%;flex:none}
+.pillar .in{padding:22px;display:flex;flex-direction:column;flex:1}
+.pillar h3{font-size:clamp(20px,1.8vw,27px);color:var(--p1)}
+.pillar p{font-size:15px;color:var(--g-d);margin:12px 0 0;font-weight:400;line-height:1.55}
+.pillar .foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:20px;
+  font-weight:600;font-size:13.5px;color:var(--g-m)}
+.pillar .foot .arrow{width:38px;height:38px;border-radius:50%;background:var(--p5);color:var(--p1);
+  display:grid;place-items:center;flex:none;transition:all .35s}
+.pillar:hover .foot .arrow{background:var(--acc);color:#fff;transform:rotate(45deg)}
+[data-theme="dark"] .pillar{background:#102441;border-color:#3A5678}
+[data-theme="dark"] .pillar h3{color:#EEF3FA}
+[data-theme="dark"] .pillar p{color:#CDD9E8}
+[data-theme="dark"] .pillar .foot{color:#A7B7CD}
+[data-theme="dark"] .pillar .foot .arrow{background:#1A3A57;color:#fff}
+[data-theme="dark"] .pillar .no{background:#09172D;color:#fff}
+@media(max-width:1080px){.pillars{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.pillars{grid-template-columns:1fr}}
+
+/* ── 05 EVIDENCE → ACTION ──────────────────── */
+.evidence{background:var(--mint-lt);border-radius:var(--r-lg);padding:clamp(30px,4vw,64px) clamp(18px,3vw,48px)}
+.track{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);align-items:start}
+.track::before{content:"";position:absolute;left:6%;right:6%;top:52px;height:2px;
+  background-image:linear-gradient(90deg,rgba(3,31,87,.22) 0 12px,transparent 12px 22px);background-size:22px 2px}
+.stage{position:relative;text-align:left;display:flex;flex-direction:column}
+.stage .bulb{width:104px;height:104px;border-radius:50%;overflow:hidden;position:relative;z-index:2;border:3px solid #fff;background:var(--p1);
+  transition:all .4s cubic-bezier(.2,.8,.3,1);flex:none}
+.stage .bulb img{width:100%;height:100%;object-fit:cover;object-position:center 18%;mix-blend-mode:luminosity;opacity:.7;transition:opacity .4s}
+.stage .bulb::after{content:"";position:absolute;inset:0;background:rgba(3,31,87,.42);transition:background .4s}
+.stage[aria-selected="true"] .bulb{border-color:var(--acc);transform:scale(1.06)}
+.stage[aria-selected="true"] .bulb img{opacity:1;mix-blend-mode:normal}
+.stage[aria-selected="true"] .bulb::after{background:transparent}
+.stage:hover .bulb{border-color:var(--acc-lt)}
+.stage h4{font-size:clamp(18px,1.6vw,24px);margin-top:18px;line-height:1.05}
+.stage p{font-size:14.5px;color:var(--g-m);margin:10px 0 0;font-weight:300;line-height:1.5;max-width:30ch;text-wrap:pretty}
+.stage .tick{font-family:var(--display);font-size:11.5px;letter-spacing:.14em;color:var(--g-m);margin-bottom:12px;display:block}
+.case{margin-top:clamp(26px,3vw,44px);border-radius:var(--r-lg);overflow:hidden;background:#fff;
+  display:grid;grid-template-columns:.44fr 1.56fr}
+.case-tag{position:relative;isolation:isolate;padding:clamp(22px,2.6vw,34px);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:20px;min-height:280px}
+.case-tag .bg{position:absolute;inset:0;z-index:-2;background:var(--p1)}
+.case-tag .bg img{width:100%;height:100%;object-fit:cover;object-position:center 20%;mix-blend-mode:normal;opacity:.88}
+.case-tag::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,31,87,.28) 0%,rgba(3,31,87,.44) 48%,rgba(3,31,87,.79) 100%)}
+.case-tag .p{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--mint)}
+.case-tag h3{font-size:clamp(23px,2.3vw,34px);margin-top:10px;color:#fff}
+.case-tag .prog{display:flex;gap:6px}
+.case-tag .prog i{height:4px;flex:1;border-radius:99px;background:rgba(255,255,255,.26)}
+.case-tag .prog i.on{background:var(--mint)}
+.case-body{padding:clamp(22px,2.8vw,40px)}
+.case-body .quote{font-family:var(--display);font-size:clamp(19px,2.2vw,32px);letter-spacing:-.035em;line-height:1.14;max-width:24ch;color:var(--p1);margin:0}
+.case-body .detail{margin-top:18px;color:var(--g-m);font-size:15px;max-width:56ch;font-weight:300}
+.case-body .metrics{display:flex;gap:34px;flex-wrap:wrap;margin-top:26px;padding-top:22px;border-top:1px dashed var(--g-l)}
+.case-body .metrics div b{display:block;font-family:var(--display);font-size:clamp(23px,2.3vw,33px);letter-spacing:-.04em;color:var(--acc)}
+.case-body .metrics div span{font-size:13px;color:var(--g-m)}
+@media(max-width:980px){.track{grid-template-columns:repeat(2,1fr);gap:32px}.track::before{display:none}.case{grid-template-columns:1fr}.stage p{max-width:none}}
+@media(max-width:520px){.track{grid-template-columns:1fr}}
+
+/* ── 06 INITIATIVES ────────────────────────── */
+.inits{display:grid;grid-template-columns:repeat(6,1fr);gap:var(--gap)}
+.init{grid-column:span 2;border-radius:var(--r-lg);overflow:hidden;background:var(--g-ul);border:1px solid var(--g-l);display:flex;flex-direction:column;
+  min-height:250px;transition:transform .3s cubic-bezier(.2,.8,.3,1),box-shadow .3s}
+.init:hover{transform:translateY(-6px);box-shadow:0 20px 44px -24px rgba(3,31,87,.55)}
+.init.wide{grid-column:span 3}
+.init .pic{height:clamp(164px,15vw,214px)}
+.init .pic img{transition:transform .7s cubic-bezier(.2,.8,.3,1);object-position:center 22%}
+.init:hover .pic img{transform:scale(1.06)}
+.init .pic .tag{position:absolute;z-index:2;left:14px;top:14px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:6px 11px;border-radius:99px;color:#fff}
+.init .in{padding:22px;display:flex;flex-direction:column;flex:1}
+.init h3{font-size:clamp(20px,1.8vw,27px)}
+.init p{font-size:14px;color:var(--g-m);margin:9px 0 0;font-weight:300}
+.init .go{display:inline-flex;align-items:center;gap:9px;margin-top:auto;padding-top:18px;font-weight:600;font-size:14.5px;color:var(--acc)}
+.init .go .arrow{transition:transform .3s}
+.init:hover .go .arrow{transform:translateX(5px)}
+.init.feature{background:var(--p1);border-color:var(--p1)}
+.init.feature h3{color:#fff}.init.feature p{color:#C5D4E6}.init.feature .go{color:var(--mint)}
+.init.accent{background:var(--acc);border-color:var(--acc)}
+.init.accent h3{color:#fff}.init.accent p{color:#E4F3FA}.init.accent .go{color:#fff}
+@media(max-width:1080px){.inits{grid-template-columns:repeat(4,1fr)}.init.wide{grid-column:span 2}}
+@media(max-width:680px){.inits{grid-template-columns:1fr}.init,.init.wide{grid-column:span 1}}
+
+/* ── 07 IMPACT ─────────────────────────────── */
+.impact{position:relative;isolation:isolate;color:#fff;padding:clamp(52px,6.6vw,110px) 0}
+.impact-bg{position:absolute;inset:0;z-index:-2;background:var(--p1)}
+.impact-bg img{width:100%;height:100%;object-fit:cover;opacity:.24;mix-blend-mode:luminosity}
+.impact-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(155deg,rgba(3,31,87,.95),rgba(10,47,113,.94))}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-lt);margin-top:clamp(22px,3vw,38px)}
+.stat{padding:clamp(24px,2.6vw,38px) clamp(16px,2vw,28px);border-right:1px solid var(--line-lt);border-bottom:1px solid var(--line-lt)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--display);font-size:clamp(44px,5.6vw,86px);letter-spacing:-.055em;line-height:.9;color:#fff;font-variant-numeric:tabular-nums}
+.stat b .suf{font-size:.45em;vertical-align:super;color:var(--mint)}
+.stat.spin b{color:var(--acc-lt)}
+.stat span{display:block;margin-top:14px;font-size:14.5px;color:#C5D4E6;max-width:22ch;font-weight:300}
+/* non-numeric impact statements: same slot, readable weight */
+.stat.word b{font-size:clamp(23px,2.5vw,34px);letter-spacing:-.03em;line-height:1.04;max-width:13ch}
+.stat.word b i{font-style:normal;color:var(--mint);display:block}
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(20px,3vw,50px);align-items:center;padding-top:clamp(30px,4vw,58px)}
+.story blockquote{margin:0;font-family:var(--display);font-size:clamp(23px,3vw,44px);letter-spacing:-.04em;line-height:1.1;color:#fff}
+.story blockquote .it{color:var(--mint)}
+.story .who{display:flex;align-items:center;gap:14px;margin-top:26px}
+.story .who .av{width:58px;height:58px;border-radius:50%;overflow:hidden;flex:none;border:2px solid var(--mint)}
+.story .who .av img{width:100%;height:100%;object-fit:cover;object-position:center 15%}
+.story .who p{margin:0;font-size:14.5px;color:#C5D4E6;font-weight:300}
+.story .who p b{display:block;color:#fff;font-size:16px;font-weight:700}
+.story-media{border-radius:var(--r-lg);overflow:hidden;position:relative;min-height:clamp(260px,28vw,360px)}
+.story-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.story-media figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:18px 20px;font-size:13px;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(3,31,87,.95));font-weight:300}
+@media(max-width:1080px){.impact-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}}
+@media(max-width:860px){.story{grid-template-columns:1fr}}
+@media(max-width:520px){.impact-grid{grid-template-columns:1fr}.stat{border-right:0}}
+
+/* ── 08 PEOPLE ─────────────────────────────── */
+.people{background:var(--p5)}
+.people-rail{display:flex;gap:var(--gap);overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.people-rail::-webkit-scrollbar{display:none}
+.person{flex:0 0 clamp(228px,23vw,300px);scroll-snap-align:start;border-radius:var(--r-lg);overflow:hidden;position:relative;
+  min-height:clamp(330px,32vw,420px);display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;
+  transition:transform .35s cubic-bezier(.2,.8,.3,1)}
+.person .bg{position:absolute;inset:0;z-index:-2;background:var(--p1)}
+.person .bg img{width:100%;height:100%;object-fit:cover;object-position:center 15%;transition:transform .8s cubic-bezier(.2,.8,.3,1)}
+.person::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,31,87,0) 40%,rgba(3,31,87,.95) 100%)}
+.person:hover{transform:translateY(-6px)}
+.person:hover .bg img{transform:scale(1.05)}
+.person .in{padding:20px;color:#fff}
+.person h4{font-size:19px;color:#fff}
+.person p{margin:5px 0 0;font-size:13.5px;color:#C5D4E6;font-weight:300}
+.person .badge{display:inline-block;margin-top:12px;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:5px 10px;border-radius:99px;background:var(--mint);color:var(--p1)}
+.rail-nav{display:flex;gap:8px}
+.rail-nav .icon-btn{border-color:rgba(3,31,87,.2);color:var(--p1)}
+.rail-nav .icon-btn:hover{background:#fff}
+
+/* ── 09 INSIGHTS ───────────────────────────── */
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.post{border-radius:var(--r-lg);border:1px solid var(--g-l);background:#fff;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.2,.8,.3,1)}
+.post:hover{transform:translateY(-6px)}
+.post .thumb{height:clamp(170px,17vw,215px)}
+.post .thumb img{transition:transform .7s cubic-bezier(.2,.8,.3,1);object-position:center 25%}
+.post:hover .thumb img{transform:scale(1.06)}
+.post .thumb .kicker{position:absolute;z-index:3;left:14px;bottom:14px;padding:7px 13px;border-radius:99px;color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.post .body{padding:22px;display:flex;flex-direction:column;flex:1}
+.post time{font-size:13px;color:var(--g-m);font-weight:600}
+.post h3{font-size:clamp(18px,1.5vw,23px);margin-top:10px;line-height:1.12}
+.post .go{margin-top:auto;padding-top:20px;font-weight:600;font-size:14.5px;display:inline-flex;gap:9px;align-items:center;color:var(--acc)}
+.post .go .arrow{transition:transform .3s}
+.post:hover .go .arrow{transform:translateX(5px)}
+@media(max-width:980px){.posts{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.posts{grid-template-columns:1fr}}
+
+/* ── 10 PRESS ──────────────────────────────── */
+.press{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap)}
+.press-card{border-radius:var(--r-lg);padding:clamp(24px,3vw,46px);display:flex;flex-direction:column;justify-content:space-between;
+  min-height:340px;position:relative;overflow:hidden;isolation:isolate}
+.press-card.a{color:#fff}
+.press-card.a .bg{position:absolute;inset:0;z-index:-2;background:var(--acc)}
+.press-card.a .bg img{width:100%;height:100%;object-fit:cover;object-position:center 20%;mix-blend-mode:luminosity;opacity:.42}
+.press-card.a::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(125deg,rgba(14,66,137,.92) 15%,rgba(3,31,87,.92) 100%)}
+.press-card.a h3,.press-card.a p{color:#fff}
+.press-card.a .n{color:rgba(255,255,255,.86)}
+.press-card.b{background:var(--mint-lt);border:1px solid var(--g-l)}
+.press-card h3{font-size:clamp(25px,2.7vw,40px);max-width:16ch}
+.press-card p{font-size:15px;margin:14px 0 0;max-width:44ch;font-weight:300;color:var(--g-m)}
+.press-card .btn{align-self:flex-start;margin-top:28px}
+.quicklinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.quicklinks a{padding:9px 15px;border-radius:999px;border:1.5px solid var(--line);background:rgba(255,255,255,.6);
+  font-size:14px;font-weight:600;color:var(--p1);transition:all .22s}
+.quicklinks a:hover{border-color:var(--p1);background:#fff;transform:translateY(-1px)}
+[data-theme="dark"] .quicklinks a{background:rgba(255,255,255,.07);color:#E6EDF7;border-color:rgba(255,255,255,.28)}
+.expert-strip{display:flex;margin-top:24px}
+.expert-strip .av{width:52px;height:52px;border-radius:50%;border:3px solid var(--mint-lt);margin-right:-14px;overflow:hidden;background:var(--p1)}
+.expert-strip .av img{width:100%;height:100%;object-fit:cover;object-position:center 15%}
+.expert-strip .more{width:52px;height:52px;border-radius:50%;border:3px solid var(--mint-lt);background:var(--p1);color:#fff;
+  display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:13px}
+@media(max-width:820px){.press{grid-template-columns:1fr}}
+
+/* ── 11 NEWSLETTER ─────────────────────────── */
+.news{border-radius:var(--r-lg);overflow:hidden;display:grid;grid-template-columns:1.25fr .75fr;background:var(--mint-lt)}
+.news .in{padding:clamp(26px,3.6vw,58px)}
+.news h2{font-size:clamp(28px,3.6vw,54px);max-width:15ch;color:var(--p1)}
+.news h2 .it{color:var(--acc)}
+.news .lede{color:var(--p2);margin-top:14px}
+.news .n{color:var(--g-m)}
+.news-media{position:relative;min-height:300px;background:var(--p1)}
+.news-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.news-form{margin-top:26px;max-width:640px}
+.interests{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.int{padding:10px 17px;border-radius:999px;border:1.5px solid rgba(3,31,87,.24);font-size:14px;font-weight:600;transition:all .22s;color:var(--p1);background:rgba(255,255,255,.6)}
+.int[aria-pressed="true"]{background:var(--p1);color:#fff;border-color:var(--p1)}
+.int:hover{border-color:var(--p1)}
+.news-row{display:flex;gap:10px;background:#fff;border-radius:999px;padding:8px 8px 8px 22px;align-items:center;flex-wrap:wrap}
+.news-row input{flex:1;min-width:170px;border:0;background:none;outline:none;padding:13px 0;font-size:16px;color:var(--p1)}
+.news-note{margin-top:14px;font-size:13px;color:var(--g-m)}
+.news-ok{display:none;margin-top:16px;font-weight:700;color:var(--p1)}
+@media(max-width:860px){.news{grid-template-columns:1fr}.news-media{min-height:220px;order:-1}}
+
+/* ── 12 FOOTER ─────────────────────────────── */
+footer{position:relative;isolation:isolate;color:#fff;margin-top:clamp(48px,6vw,88px);border-radius:var(--r-lg) var(--r-lg) 0 0;
+  padding:clamp(40px,5vw,82px) 0 24px;overflow:hidden;background:var(--p1)}
+.foot-art{position:absolute;inset:0;z-index:-1;width:100%;height:100%;opacity:.5;pointer-events:none}
+.foot-lead{display:flex;align-items:center;justify-content:space-between;gap:clamp(20px,3vw,40px);flex-wrap:wrap;
+  padding-bottom:clamp(26px,3.4vw,42px);margin-bottom:clamp(26px,3.4vw,42px);border-bottom:1px solid var(--line-lt)}
+.foot-lead .who{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px}
+.foot-top{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(18px,2.2vw,30px)}
+.foot-brand .logo-chip{display:inline-block;background:transparent;padding:0}
+.foot-brand img{height:64px;width:auto}
+.foot-brand p{color:#E6EEF7;font-size:19px;line-height:1.6;margin:0 auto;max-width:52ch;font-weight:400;text-align:center}
+.foot-brand address{font-style:normal;color:#C5D4E6;font-size:14px;margin-top:20px;line-height:1.75;font-weight:300}
+.foot-brand address a{color:var(--mint)}
+.foot-col h5{font-family:var(--display);font-size:18px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);margin:0 0 16px;font-weight:700}
+.foot-col ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+.foot-col a{font-size:14.5px;color:#fff;opacity:.86;transition:opacity .2s,color .2s}
+.foot-col a:hover{opacity:1;color:var(--mint)}
+.foot-bottom{margin-top:clamp(32px,4vw,58px);padding-top:24px;border-top:1px solid var(--line-lt);display:flex;justify-content:space-between;
+  gap:18px;flex-wrap:wrap;align-items:center;font-size:13.5px;color:#C5D4E6}
+.socials{display:flex;gap:8px}
+.socials a{width:40px;height:40px;border-radius:50%;border:1px solid var(--line-lt);display:grid;place-items:center;transition:all .22s}
+.socials a:hover{background:var(--mint);color:var(--p1);border-color:var(--mint)}
+.foot-legal{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+/* Giant wordmark, edge to edge of the grid */
+.wordmark{margin-top:clamp(26px,3.4vw,52px)}
+.wordmark svg{width:100%;height:auto;display:block;overflow:visible}
+.wordmark text{font-family:var(--display);font-weight:800;fill:#fff;opacity:.13;letter-spacing:-.04em}
+@media(max-width:1180px){.foot-top{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.foot-lead .btn{width:100%;justify-content:center}}
+@media(max-width:980px){.foot-top{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.foot-top{grid-template-columns:1fr}}
+
+.credit{font-size:12px;color:var(--g-m);text-align:center;padding:22px var(--pad) 0}
+
+/* ══════════ DITHER SCENE + TOP LINE ART ══════════ */
+.top-art{position:absolute;inset:0;z-index:-1;width:100%;height:100%;opacity:.55;pointer-events:none}
+.dither{position:absolute;left:0;right:0;bottom:-1px;z-index:-1;width:100%;height:min(62%,520px);pointer-events:none;
+  opacity:.62;will-change:transform}
+.dither svg{width:100%;height:100%;display:block}
+.dither-2{position:absolute;right:-4%;top:calc(var(--navh) - 20px);width:min(46%,620px);height:auto;z-index:-1;
+  opacity:.30;pointer-events:none;transform:scaleX(-1)}
+@media(max-width:820px){.dither-2{display:none}.dither{height:44%;opacity:.5}}
+
+/* animated terrain line */
+.drawline{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 6s cubic-bezier(.4,0,.2,1) .6s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.flicker{animation:flick 5.5s ease-in-out infinite}
+@keyframes flick{0%,100%{opacity:.25}50%{opacity:.8}}
+.drift{animation:drift 22s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ══════════ MICRO ELEMENTS ══════════ */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:120;
+  background:linear-gradient(90deg,var(--mint),var(--acc-lt),var(--acc));transition:width .12s linear}
+
+.livepill{display:inline-flex;align-items:center;gap:9px;padding:7px 15px 7px 12px;border-radius:999px;
+  border:1px solid rgba(253,183,23,.45);background:rgba(253,183,23,.12);backdrop-filter:blur(6px);
+  font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mint)}
+.livepill i{width:8px;height:8px;border-radius:50%;background:var(--mint);position:relative;flex:none}
+.livepill i::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1.5px solid var(--mint);
+  animation:ping 2.2s cubic-bezier(0,0,.2,1) infinite}
+@keyframes ping{0%{transform:scale(.5);opacity:.9}80%,100%{transform:scale(1.5);opacity:0}}
+
+.floaters{position:absolute;inset:0;pointer-events:none;z-index:3}
+.floater{position:absolute;display:inline-flex;align-items:center;gap:9px;padding:10px 15px;border-radius:999px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.30);backdrop-filter:blur(10px);
+  font-size:13px;font-weight:600;color:#fff;white-space:nowrap;box-shadow:0 12px 30px -18px rgba(0,0,0,.7)}
+.floater b{font-family:var(--display);font-size:15px;letter-spacing:-.02em}
+.floater .kk{width:7px;height:7px;border-radius:50%;flex:none}
+.floater.f1{top:16%;right:6%;animation:bob 7s ease-in-out infinite}
+.floater.f2{top:44%;right:15%;animation:bob 9s ease-in-out .8s infinite}
+.floater.f3{top:70%;right:3%;animation:bob 8s ease-in-out .4s infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@media(max-width:1180px){.floaters{display:none}}
+
+/* heading underline draws in on reveal */
+.uline{position:relative;display:inline-block}
+.uline::after{content:"";position:absolute;left:0;bottom:-.12em;height:5px;width:100%;border-radius:99px;
+  background:linear-gradient(90deg,var(--mint),var(--acc-lt));transform:scaleX(0);transform-origin:left;
+  transition:transform .9s cubic-bezier(.2,.8,.3,1) .2s}
+.rise.in .uline::after{transform:scaleX(1)}
+
+/* animated connector on the evidence track */
+.track::before{animation:flow 1.4s linear infinite}
+@keyframes flow{to{background-position:22px 0}}
+
+/* secondary-colour accents */
+.sec-tint{background:var(--g-ul)}
+.init::before{content:"";display:block;height:4px;background:var(--mint)}
+.init.feature::before{background:var(--acc-lt)}
+.init.accent::before{background:var(--mint)}
+.init:nth-child(3n)::before{background:var(--acc-lt)}
+.init:nth-child(3n+1)::before{background:var(--mint)}
+.marquee-track span:nth-child(even){color:var(--acc)}
+.stat:nth-child(even) b .suf{color:var(--acc-lt)}
+.chip:nth-child(even):hover{background:var(--acc-lt);color:var(--p1);border-color:var(--acc-lt)}
+.path-link:nth-child(2) .arrow{color:var(--p4)}
+.path-link:nth-child(3) .arrow{color:var(--mint);filter:brightness(.85)}
+.mint-rule{height:4px;width:100%;border-radius:99px;margin-top:clamp(30px,4vw,52px);
+  background:linear-gradient(90deg,var(--mint),var(--acc-lt) 45%,var(--p5) 80%,transparent)}
+
+.rise{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.8,.3,1),transform .7s cubic-bezier(.2,.8,.3,1)}
+.rise.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  html{scroll-behavior:auto}.rise{opacity:1;transform:none}
+}
+
+/* ══════════ FOOTER ART — very slow drift ══════════ */
+.fa-rings{transform-box:fill-box;transform-origin:center;animation:faBreathe 90s ease-in-out infinite}
+@keyframes faBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+.fa-terrain{stroke-dasharray:1500;stroke-dashoffset:1500;animation:faTerrain 8s ease-out .4s forwards}
+@keyframes faTerrain{to{stroke-dashoffset:0}}
+@keyframes faTrace{to{stroke-dashoffset:-2400}}
+.fa-net{stroke-dasharray:6 8;animation:faTrace2 150s linear infinite;opacity:.9}
+@keyframes faTrace2{to{stroke-dashoffset:-900}}
+.fa-nodes circle{animation:faGlow 26s ease-in-out infinite}
+.fa-nodes circle:nth-child(2){animation-delay:-5s}
+.fa-nodes circle:nth-child(3){animation-delay:-10s}
+.fa-nodes circle:nth-child(4){animation-delay:-15s}
+.fa-nodes circle:nth-child(5){animation-delay:-20s}
+.fa-nodes circle:nth-child(6){animation-delay:-8s}
+.fa-nodes circle:nth-child(7){animation-delay:-18s}
+@keyframes faGlow{0%,100%{opacity:.25}50%{opacity:1}}
+.fa-bars{animation:faRise 70s ease-in-out infinite}
+@keyframes faRise{0%,100%{transform:translateY(6px)}50%{transform:translateY(-6px)}}
+
+/* ══════════ SKIP LINK ══════════ */
+.skip{position:fixed;left:12px;top:-100px;z-index:200;background:var(--p1);color:#fff;padding:13px 20px;border-radius:12px;
+  font-weight:700;font-size:15px;border:2px solid var(--mint);transition:top .2s}
+.skip:focus{top:12px}
+
+/* ══════════ THEME TOGGLE ══════════ */
+.theme-btn svg{width:19px;height:19px}
+.theme-btn .moon{display:none}
+[data-theme="dark"] .theme-btn .moon{display:block}
+[data-theme="dark"] .theme-btn .sun{display:none}
+
+/* ══════════ DARK THEME ══════════ */
+[data-theme="dark"]{--p5:#1C3656;--g-ul:#102441;--g-l:#3A5678;--g-m:#A7B7CD;--g-d:#E6EDF7;--mint-lt:#102437;
+  --line:rgba(255,255,255,.18);color-scheme:dark}
+[data-theme="dark"] body{background:#09172D;color:#E6EDF7}
+[data-theme="dark"] h1,[data-theme="dark"] h2,[data-theme="dark"] h3,[data-theme="dark"] h4{color:#EEF3FA}
+[data-theme="dark"] .lede{color:#BDCBDE}
+[data-theme="dark"] .sec-tint{background:#0D1E37}
+[data-theme="dark"] .post,[data-theme="dark"] .case{background:#162B48;border-color:#3A5678}
+[data-theme="dark"] .path{background:#162B48;border-color:#3A5678;color:#E6EDF7}
+[data-theme="dark"] .path:hover{border-color:var(--mint);color:var(--mint)}
+[data-theme="dark"] .path[aria-selected="true"]{background:var(--mint);border-color:var(--mint);color:#09172D}
+[data-theme="dark"] .path-panel{background:#102441;border-color:#3A5678}
+[data-theme="dark"] .path-link{background:#1C3656}
+[data-theme="dark"] .path-link strong{color:#EEF3FA}
+[data-theme="dark"] .path-link em{color:#BDCBDE}
+[data-theme="dark"] .path-link .arrow{color:var(--mint)}
+[data-theme="dark"] .init{background:#102441;border-color:#3A5678}
+[data-theme="dark"] .init .tag{color:#fff}
+[data-theme="dark"] .init .go{color:var(--acc-lt)}
+[data-theme="dark"] .evidence{background:#0D1E37}
+[data-theme="dark"] .stage .bulb{border-color:#3A5678}
+[data-theme="dark"] .case-body .quote{color:#EEF3FA}
+[data-theme="dark"] .case-body .metrics div b{color:var(--acc-lt)}
+[data-theme="dark"] .searchbar{background:#1C3656}
+[data-theme="dark"] .searchbar input{color:#fff}
+[data-theme="dark"] .searchbar input::placeholder{color:#95A6BD}
+[data-theme="dark"] .news{background:#102441}
+[data-theme="dark"] .news h2{color:#EEF3FA}
+[data-theme="dark"] .news .lede,[data-theme="dark"] .news-note{color:#BDCBDE}
+[data-theme="dark"] .news-row{background:#1C3656}
+[data-theme="dark"] .news-row input{color:#fff}
+[data-theme="dark"] .int{background:rgba(255,255,255,.07);color:#E6EDF7;border-color:rgba(255,255,255,.3)}
+[data-theme="dark"] .int[aria-pressed="true"]{background:var(--mint);color:#09172D;border-color:var(--mint)}
+[data-theme="dark"] .news-ok{color:var(--mint)}
+[data-theme="dark"] .press-card.b{background:#102441;border-color:#3A5678}
+[data-theme="dark"] .expert-strip .av,[data-theme="dark"] .expert-strip .more{border-color:#102441}
+[data-theme="dark"] .people{background:#0D1E37}
+[data-theme="dark"] .btn{background:var(--acc)}
+[data-theme="dark"] .btn:hover{background:var(--p4)}
+[data-theme="dark"] .btn--ghost{background:transparent;color:#E6EDF7;border-color:rgba(255,255,255,.32)}
+[data-theme="dark"] .btn--ghost .dot{background:var(--mint);color:#09172D}
+[data-theme="dark"] .btn--ghost:hover{background:rgba(255,255,255,.08)}
+[data-theme="dark"] .eyebrow{background:#1C3656;color:#E6EDF7;border-color:#3A5678}
+[data-theme="dark"] .marquee{border-color:#3A5678}
+[data-theme="dark"] .marquee-track span{color:#BDCBDE}
+[data-theme="dark"] .marquee-track span:nth-child(even){color:var(--acc-lt)}
+[data-theme="dark"] .post time,[data-theme="dark"] .n{color:#A7B7CD}
+[data-theme="dark"] .nav-inner{background:#102441;border-color:#3A5678;box-shadow:0 14px 38px -22px rgba(0,0,0,.75)}
+[data-theme="dark"] .nav.solid .nav-inner{border-color:#3A5678}
+[data-theme="dark"] .nav-links a{color:#E6EDF7}
+[data-theme="dark"] .nav-links a:hover{background:rgba(255,255,255,.10);color:#fff}
+[data-theme="dark"] .nav-links a.here,[data-theme="dark"] .nav-links a.here:hover{background:var(--mint);color:var(--nav-ink)}
+[data-theme="dark"] .nav .icon-btn{color:#E6EDF7}
+[data-theme="dark"] .nav .icon-btn:hover{background:rgba(255,255,255,.10)}
+[data-theme="dark"] .nav .btn{background:var(--cta)}
+[data-theme="dark"] .nav .btn:hover{background:#144C9B}
+/* the logo is drawn for light ground — give it one when the bar goes dark */
+[data-theme="dark"] .nav .brand img{background:#fff;border-radius:14px;padding:5px 9px}
+[data-theme="dark"] .rail-nav .icon-btn{border-color:rgba(255,255,255,.3);color:#E6EDF7}
+[data-theme="dark"] .rail-nav .icon-btn:hover{background:rgba(255,255,255,.1)}
+[data-theme="dark"] .credit{color:#8B9CB5}
+[data-theme="dark"] #a11y-panel{background:#162B48;color:#E6EDF7;border-color:#3A5678}
+[data-theme="dark"] .a11y-row{border-color:#3A5678}
+[data-theme="dark"] :focus-visible{outline-color:var(--mint)}
+
+/* ══════════ ACCESSIBILITY TOOLS ══════════ */
+#a11y-fab{position:fixed;right:20px;bottom:20px;z-index:140;width:58px;height:58px;border-radius:50%;
+  background:var(--p1);color:#fff;display:grid;place-items:center;border:2px solid #fff;
+  box-shadow:0 12px 34px rgba(7,19,42,.42);transition:transform .25s,background .25s}
+#a11y-fab:hover{transform:scale(1.06);background:var(--acc)}
+#a11y-fab svg{width:30px;height:30px}
+#a11y-panel{position:fixed;right:20px;bottom:90px;z-index:140;width:min(330px,calc(100vw - 40px));
+  max-height:min(76vh,620px);overflow:auto;background:#fff;color:var(--g-d);border:1px solid var(--g-l);
+  border-radius:22px;padding:18px;box-shadow:0 26px 70px rgba(7,19,42,.30)}
+#a11y-panel[hidden]{display:none}
+#a11y-panel h2{font-size:19px;margin-bottom:4px}
+#a11y-panel .sub{font-size:13px;color:var(--g-m);margin:0 0 14px}
+.a11y-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;border-top:1px solid var(--g-l);font-size:14.5px;font-weight:600}
+.a11y-row span small{display:block;font-weight:400;font-size:12.5px;color:var(--g-m);margin-top:2px}
+.sw{width:50px;height:28px;border-radius:99px;background:var(--g-l);position:relative;flex:none;transition:background .22s}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;
+  box-shadow:0 1px 4px rgba(0,0,0,.3);transition:transform .22s}
+[aria-pressed="true"] .sw{background:var(--acc)}
+[aria-pressed="true"] .sw::after{transform:translateX(22px)}
+.a11y-read{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.a11y-read button{flex:1;min-width:84px;padding:11px 12px;border-radius:12px;background:var(--p1);color:#fff;font-weight:650;font-size:13.5px}
+.a11y-read button:hover{background:var(--acc)}
+.a11y-read button[disabled]{opacity:.45;cursor:not-allowed}
+#a11y-reset{margin-top:14px;width:100%;padding:11px;border-radius:12px;border:1.5px solid var(--g-l);font-weight:650;font-size:13.5px}
+#a11y-reset:hover{background:var(--g-ul)}
+#speakStatus{font-size:12.5px;color:var(--g-m);margin-top:8px}
+
+/* grayscale — applied per-branch so fixed positioning still works */
+[data-bw="on"] main,[data-bw="on"] footer,[data-bw="on"] .credit,
+[data-bw="on"] .nav-inner,[data-bw="on"] #progress,[data-bw="on"] #a11y-fab{filter:grayscale(1)}
+/* larger text */
+[data-bigtext="on"]{font-size:118.75%}
+/* always-underline links */
+[data-ulinks="on"] main a,[data-ulinks="on"] footer a{text-decoration:underline;text-underline-offset:3px}
+/* boosted contrast */
+[data-contrast="on"]{--g-m:#38455B;--line:rgba(7,19,42,.4)}
+[data-contrast="on"] .pillar .bg img,[data-contrast="on"] .case-tag .bg img,
+[data-contrast="on"] .finder-bg img,[data-contrast="on"] .impact-bg img{opacity:.2}
+[data-contrast="on"] .pillar .in{background:linear-gradient(180deg,rgba(7,19,42,.2),rgba(7,19,42,.94) 30%)}
+[data-contrast="on"] .topshell-bg::after{background:rgba(7,19,42,.94)}
+[data-contrast="on"] .dither,[data-contrast="on"] .dither-2,[data-contrast="on"] .top-art,[data-contrast="on"] .floaters{opacity:.16}
+[data-contrast="on"] .post,[data-contrast="on"] .init,[data-contrast="on"] .path{border-width:2px}
+[data-contrast="on"] a:focus-visible,[data-contrast="on"] button:focus-visible{outline-width:4px}
+[data-theme="dark"][data-contrast="on"]{--g-m:#CDD9E8}
+/* motion off */
+[data-motion="off"] *,[data-motion="off"] *::before,[data-motion="off"] *::after{
+  animation:none!important;transition:none!important;scroll-behavior:auto!important}
+/* currently-spoken block */
+.speaking{outline:3px dashed var(--acc);outline-offset:6px;border-radius:8px}
+
+/* ══════════ FOOTER — designed by ══════════ */
+.designed-by{display:flex;align-items:center;justify-content:flex-end;gap:18px;margin-top:26px;padding-top:22px;
+  border-top:1px solid var(--line-lt)}
+.designed-by .lbl{font-size:14px;line-height:1.2;text-align:right;color:#BDCBDE;font-weight:600}
+.designed-by img{height:42px;width:auto}
+@media(max-width:560px){.designed-by{justify-content:flex-start}.designed-by img{height:34px}}
+
+/* speech controls */
+.a11y-field{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;font-size:13.5px;font-weight:600}
+.a11y-field select{flex:1;max-width:190px;padding:8px 10px;border-radius:10px;border:1.5px solid var(--g-l);
+  background:var(--white);color:var(--g-d);font-size:13.5px}
+[data-theme="dark"] .a11y-field select{background:#1C3656;color:#E6EDF7;border-color:#3A5678}
+
+/* ══════════ GESTALT + HEURISTICS ══════════ */
+/* similarity: every forward link reads the same way */
+.go,.path-link,.init .go,.post .go{font-variant-numeric:tabular-nums}
+/* proximity: label sits with its heading, headings breathe away from the next group */
+.sec-head .n{display:block;margin-bottom:6px}
+.sec-head > div{max-width:62ch}
+/* common region: the finder gets a help affordance */
+.finder-help{margin-top:14px;font-size:14px;color:#D8E7F3}
+.finder-help a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+/* homepage only for now: "Home" is the fixed selected item; keep anchored sections clear of the fixed header */
+main,section[id]{scroll-margin-top:calc(var(--navh) + 12px)}
+/* user control: motion + back to top */
+.hero-controls{display:flex;gap:10px;align-items:center;margin-top:22px;flex-wrap:wrap}
+.ctrl{display:inline-flex;align-items:center;gap:9px;padding:9px 15px;border-radius:999px;font-size:13.5px;font-weight:600;
+  color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(8px);transition:background .22s}
+.ctrl:hover{background:rgba(255,255,255,.26)}
+.ctrl svg{width:14px;height:14px}
+#toTop{position:fixed;right:20px;bottom:88px;z-index:135;width:48px;height:48px;border-radius:50%;
+  background:var(--white);color:var(--p1);border:1.5px solid var(--g-l);display:grid;place-items:center;
+  box-shadow:0 10px 26px rgba(7,19,42,.22);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;transform:translateY(8px)}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+#toTop:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
+[data-theme="dark"] #toTop{background:#162B48;color:#fff;border-color:#3A5678}
+#a11y-panel:not([hidden]) ~ #toTop{bottom:auto;display:none}
+/* error prevention + recovery */
+.field-error{display:none;margin-top:10px;font-size:13.5px;font-weight:600;color:#B3261E;
+  display:none;align-items:center;gap:8px}
+.field-error[data-show="true"]{display:flex}
+[data-theme="dark"] .field-error{color:#FFB4AB}
+.news-row[data-invalid="true"]{outline:2px solid #B3261E;outline-offset:2px}
+/* panel close affordance */
+#a11y-close{position:absolute;right:14px;top:14px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid var(--g-l);color:var(--g-d)}
+#a11y-close:hover{background:var(--g-ul)}
+#a11y-panel{position:fixed}
+
+/* ══════════════════════════════════════════════════════════
+   MOBILE LAYER — everything below is scoped to small screens
+   Desktop rendering is untouched.
+   ══════════════════════════════════════════════════════════ */
+
+/* comfortable hit targets on any touch device */
+@media (hover:none){
+  .chip,.int,.path,.nav-links a,.foot-col a,.foot-legal a{min-height:44px;display:inline-flex;align-items:center}
+  .icon-btn{width:46px;height:46px}
+  .btn{padding:15px 18px 15px 24px}
+}
+
+/* ── mobile drawer ── */
+.mnav{position:fixed;inset:0;z-index:150}
+.mnav[hidden]{display:none}
+.mnav-scrim{position:absolute;inset:0;background:rgba(7,19,42,.62);backdrop-filter:blur(3px);opacity:0;transition:opacity .3s}
+.mnav[data-open="true"] .mnav-scrim{opacity:1}
+.mnav-panel{position:absolute;right:0;top:0;bottom:0;width:min(360px,88vw);background:var(--p1);color:#fff;
+  padding:18px 20px 26px;display:flex;flex-direction:column;transform:translateX(100%);
+  transition:transform .38s cubic-bezier(.2,.8,.3,1);overflow-y:auto}
+.mnav[data-open="true"] .mnav-panel{transform:none}
+.mnav-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line-lt)}
+.mnav-head img{height:28px;width:auto}
+.mnav-head .brand{gap:10px}
+.mnav-close{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-lt);display:grid;place-items:center;color:#fff}
+.mnav-links{display:grid;gap:2px;margin-top:14px}
+.mnav-links a{display:flex;align-items:center;justify-content:space-between;padding:16px 4px;font-size:19px;font-weight:650;
+  font-family:var(--display);letter-spacing:-.02em;border-bottom:1px solid rgba(255,255,255,.10)}
+.mnav-links a span{color:var(--mint);font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.12em}
+.mnav-links a.here{color:var(--mint)}
+.mnav-foot{margin-top:auto;padding-top:22px;display:grid;gap:10px}
+.mnav-foot .btn{justify-content:center}
+.mnav-meta{font-size:13px;color:#BDCBDE;line-height:1.6}
+
+/* ══════════ CARD DECK — physical playing-card stack ══════════ */
+@media (max-width:760px){
+  .deck{display:block!important;position:relative;height:var(--deck-h,560px);
+    perspective:1100px;touch-action:pan-y;margin-inline:2px}
+  .deck > *{position:absolute!important;left:0;right:0;top:0;width:100%;margin:0;
+    transform-origin:50% 92%;
+    transform:translate3d(var(--x,0px),calc(var(--o,0)*13px),0) scale(calc(1 - var(--o,0)*.052)) rotate(calc(var(--r,0)*1deg + var(--dr,0deg)));
+    transition:transform .45s cubic-bezier(.2,.8,.3,1),opacity .32s,box-shadow .32s;
+    box-shadow:0 22px 44px -26px rgba(7,19,42,.6);will-change:transform;backface-visibility:hidden}
+  .deck > *[data-front="false"]{pointer-events:none}
+  .deck > *[data-stacked="hidden"]{opacity:0}
+  .deck.dragging > *[data-front="true"]{transition:none}
+  .deck > *[data-front="true"]{box-shadow:0 30px 56px -28px rgba(7,19,42,.68)}
+
+  .deck-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px}
+  .deck-dots{display:flex;gap:6px;align-items:center}
+  .deck-dots i{width:7px;height:7px;border-radius:99px;background:var(--g-l);transition:all .3s}
+  .deck-dots i.on{background:var(--acc);width:24px}
+  .deck-btn{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--g-l);background:var(--white);
+    color:var(--p1);display:grid;place-items:center}
+  .deck-btn:active{background:var(--p5)}
+  .deck-count{font-size:13px;font-weight:700;color:var(--g-m);font-variant-numeric:tabular-nums}
+  .deck-hint{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:12px;
+    font-size:12.5px;color:var(--g-m);font-weight:600}
+  .deck-hint svg{width:15px;height:15px}
+  [data-theme="dark"] .deck-btn{background:#162B48;border-color:#3A5678;color:#fff}
+  [data-theme="dark"] .deck-dots i{background:#3A5678}
+  [data-theme="dark"] .deck-dots i.on{background:var(--mint)}
+
+  /* ── tabs become swipeable rails ── */
+  .paths{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;
+    margin-inline:calc(var(--pad)*-1);padding:2px var(--pad) 10px;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent)}
+  .paths::-webkit-scrollbar{display:none}
+  .path{flex:none;scroll-snap-align:start}
+  .pops{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:6px}
+  .pops::-webkit-scrollbar{display:none}
+  .chip{flex:none}
+  .track{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;scrollbar-width:none;
+    padding-bottom:6px;margin-inline:calc(var(--pad)*-1);padding-inline:var(--pad)}
+  .track::-webkit-scrollbar{display:none}
+  .track::before{display:none}
+  .stage{flex:0 0 82%;scroll-snap-align:center;background:var(--white);border:1px solid var(--g-l);
+    border-radius:22px;padding:18px}
+  .stage p{max-width:none}
+  [data-theme="dark"] .stage{background:#162B48;border-color:#3A5678}
+
+  /* ── proportions and rhythm ── */
+  .hero h1{font-size:clamp(34px,9.2vw,50px);max-width:none}
+  .topshell{padding-top:calc(var(--navh) + 28px)}
+  .strip .ph{height:112px}
+  .sec{padding:44px 0}
+  .sec-head{margin-bottom:24px}
+  .sec-head h2{font-size:clamp(28px,8vw,40px)}
+  .evidence{padding:26px 16px;border-radius:24px}
+  .case{border-radius:24px}
+  .path-media{min-height:210px}
+  .finder{padding:26px 20px}
+  .searchbar{padding:7px 7px 7px 18px}
+  .searchbar .btn span{display:none}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .stat{padding:20px 14px}
+  .stat:nth-child(odd){border-right:1px solid var(--line-lt)}
+  .stat:nth-child(even){border-right:0}
+  .wordmark{margin-top:26px}
+  .designed-by{justify-content:flex-start;flex-wrap:wrap;gap:12px}
+
+  /* floating controls clear of each other and of the thumb zone */
+  #a11y-fab{right:14px;bottom:14px;width:54px;height:54px}
+  #toTop{right:14px;bottom:78px;width:44px;height:44px}
+  #a11y-panel{right:10px;left:10px;bottom:78px;width:auto;max-height:70vh}
+}
+
+@media (max-width:520px){
+  .strip{grid-template-columns:1fr 1fr}
+  .hero-controls .ctrl{width:100%;justify-content:center}
+  .deck{height:var(--deck-h,600px)}
+}
+
+/* footer lead: logo left, description centred, CTA right; stacks on small screens */
+.foot-lead{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,2fr) minmax(0,1fr);align-items:center;gap:24px}
+.foot-lead .who{display:contents}
+.foot-lead .logo-chip{justify-self:start}
+.foot-lead .btn{justify-self:end}
+.foot-lead .foot-brand p{text-align:center}
+@media(max-width:900px){.foot-lead{grid-template-columns:1fr;justify-items:center;text-align:center}.foot-lead .logo-chip,.foot-lead .btn{justify-self:center}}
+
+/* footer headings: lighter weight, one line each, wider Vendors column on desktop */
+.foot-col h5{font-weight:600!important;letter-spacing:.04em!important;white-space:nowrap}
+@media(min-width:1001px){.foot-top{grid-template-columns:1fr 1fr 1fr minmax(0,1.5fr) 1fr}}
+
+
+/* header nav: centred between logo and actions, even spacing */
+.nav-links{margin-left:auto;margin-right:auto;justify-content:center;gap:10px}
+.nav-links a{padding:10px 14px}
+/* partner cards: black gradient */
+.person::after{background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.94) 100%)!important}
+/* blue and navy backgrounds: pure white text */
+.on-dark p,.on-dark li,.on-dark span,.on-dark b,.on-dark small,.on-dark cite,
+.on-dark h2,.on-dark h3,.on-dark h4,.on-dark .lede,.on-dark .n,
+.impact p,.impact span,.impact b,.impact .lede,.impact .n,.impact cite,.impact blockquote,
+footer p,footer span,footer address,footer li a,footer h2,footer h5,footer a,
+.person p,.person h3,.person h4,.person .in,
+.press-card.a p,.press-card.a h3,.press-card.a .n,
+.init.feature p,.init.feature h3,.init.accent p,.init.accent h3,
+.case-tag p,.case-tag .k,.case-tag h3,
+.path-media p,.path-media .who,.path-media .cop,
+.finder .lede,.finder-meta,.finder-meta span,.finder-help,.finder-help a,
+.story blockquote,.story cite,.story .who p,.story-media figcaption,
+.floater,.floater b,.livepill,.marquee-track span,.topics li{color:#fff!important}
+.lock span,.foot-col h5{color:#A9D7FF!important}
+
+/* readability: heavier body weight where thin text was grey-looking */
+.lede{font-weight:400}
+.evidence p,.stage p,.case-body p,.case-body .detail,.metrics span,.news p,.news-note,.press-card.b p,
+.person p,.on-dark p,.impact p,.finder .lede,.path-media p,.init p,.pillar p,.card p{font-weight:500}
+
+/* blue sections: every text element pure white (accents keep their colour) */
+.impact *:not(i):not(.it):not(.n):not(.eyebrow):not(.dot):not(svg):not(svg *){color:#fff!important}
+.impact .n,.impact .eyebrow{color:#A9D7FF!important}
+.impact .stat span,.impact .story .who p,.impact .story figcaption{font-weight:500!important}
+
+.press-card.a p,.press-card.a .n{font-weight:500!important;opacity:1!important}
+
+/* ── Round 4 ── */
+
+/* hero heading: two lines */
+
+/* buttons keep their own text colour inside dark sections */
+.btn--white,.btn--white span,.btn--white .dot{color:var(--p1)!important}
+.btn--white span:first-child{color:var(--p1)!important}
+.btn--glass span:first-child{color:#fff!important}
+.btn--white .dot span,.btn .dot span{color:inherit!important}
+.btn .dot,.btn .dot *{color:#fff!important}
+/* impact image card: black gradient from the bottom */
+.story-media figcaption{background:linear-gradient(180deg,transparent,rgba(0,0,0,.95))!important}
+/* services: "Who we serve" headings at 50% */
+#priorities .g-prio h3{font-size:calc(clamp(46px,7.6vw,124px) * .5)!important}
+
+/* hero heading: original size, fewer words so it sits on two lines */
+@media(min-width:901px){.hero h1{font-size:clamp(42px,7.6vw,120px)!important;max-width:none!important}}
+/* glass button: arrow stays navy on its white circle */
+.btn--glass .dot,.btn--glass .dot *{color:var(--p1)!important}
+
+/* hero: balanced spacing, lighter side card, shorter hero */
+.hero-grid{align-items:start!important;margin-top:14px!important}
+.hero-actions{margin-top:22px!important}
+.hero-controls{margin-top:12px!important}
+.topshell{padding-bottom:clamp(24px,3vw,40px)!important}
+.hero-side{background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,.16))!important;border:1px solid rgba(255,255,255,.6)!important;backdrop-filter:blur(12px)}
+.hero-side .ph{height:182px!important}
+.hero-side .in{padding:18px 20px}
+.hero-side .ph img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero-side .k,.hero-side p,.hero-side a{color:#fff!important}
+.hero-side p{font-weight:500}
+.hero-side a{color:#A9D7FF!important}
+
+/* MEDA presentation refinements — preserve all sections and layouts. */
+:root { --pad: clamp(20px, 3vw, 52px); }
+.wrap { max-width: 1560px; }
+/* Static concept icons: visual only, no theme/accessibility behavior. */
+.nav .theme-btn,
+.nav #themeBtn { width: 44px; height: 44px; flex: 0 0 44px; border: 1.5px solid #C1D5EE;
+  border-radius: 50%; background: #ECF4FF; color: #002D74; box-shadow: inset 0 1px 2px rgba(255,255,255,.86); }
+.nav #themeBtn:hover { background: #ECF4FF; }
+#themeBtn, #a11y-fab { pointer-events: none !important; cursor: default !important; }
+#a11y-fab:hover { background: var(--p1); transform: none; }
+/* Footer art removed for a cleaner footer. */
+.foot-art { display: block !important; opacity: .42 !important; }
+.foot-art .dev-bars rect{animation:flick 8s ease-in-out infinite;}
+.foot-art .dev-bars rect:nth-child(2){animation-delay:.8s}
+.foot-art .dev-bars rect:nth-child(3){animation-delay:1.6s}
+.foot-art .dev-bars rect:nth-child(4){animation-delay:2.4s}
+.foot-art .dev-line{animation:drift 20s ease-in-out infinite;}
+/* Reintroduce social-platform glyphs using MEDA's navy / light-blue theme. */
+.socials { gap: 10px; align-items: center; }
+.socials .social-icon { width: 42px; height: 42px; border: 1px solid rgba(169,215,255,.62);
+  border-radius: 50%; display: grid; place-items: center; flex: 0 0 42px;
+  color: #FFFFFF; background: transparent; }
+.socials .social-icon:nth-child(even) { color: #FFFFFF; background: transparent; border-color: rgba(169,215,255,.62); }
+.socials .social-icon svg { width: 19px; height: 19px; display: block; }
+/* Footer credit: first line Website; second line Concept by; logo remains alongside. */
+.designed-by { gap: 14px; align-items: center; }
+.designed-by .lbl { min-width: 100px; font-size: 13px; line-height: 1.35; font-weight: 600;
+  letter-spacing: .025em; text-align: right; white-space: nowrap; color: #D8E7F7; }
+.designed-by img { height: 42px; width: auto; }
+@media (max-width: 560px) {
+  :root { --pad: 18px; }
+  .designed-by { justify-content: flex-start; gap: 12px; }
+  .designed-by .lbl { min-width: 90px; text-align: right; }
+  .designed-by img { height: 36px; }
+  .socials .social-icon { width: 38px; height: 38px; flex-basis: 38px; }
+}
+</style>
+<link rel="stylesheet" href="assets/meda.css">
+</head>
+
+<body>
+<a class="skip" href="#main-content">Skip to main content</a>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <nav class="nav-inner" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="MEDA home">
+        <img id="logoNav" src="assets/meda.svg" alt="Moffat Economic Development Authority" width="118" height="80">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="here" aria-current="page">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#board">Board</a>
+        <a href="documents.html?type=minutes#archive">Meeting Minutes</a>
+        <a href="documents.html">Public Documents</a>
+      </div>
+      <div class="nav-cta">
+        <button type="button" class="icon-btn" id="searchBtn" aria-label="Search public documents" aria-haspopup="dialog" aria-controls="searchDialog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg></button>
+        <span class="icon-btn theme-btn" id="themeBtn" aria-hidden="true">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+        </span>
+        <button class="icon-btn burger" type="button" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+        <a class="btn" href="index.html#contact"><span>Contact</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top"><span id="main-content" tabindex="-1"></span>
+
+<!-- ══════════ 01 · HERO (video) ══════════ -->
+<section class="topshell on-dark">
+  <div class="topshell-bg">
+    <video muted loop playsinline preload="metadata" poster="assets/media/colorado-landscape-poster.webp" aria-hidden="true" tabindex="-1">
+      <source src="assets/media/colorado-landscape.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="topshell-grain" aria-hidden="true"></div>
+
+  <!-- Line-art layer, matching the footer pattern -->
+  <svg class="top-art" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="tFade" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#A9D7FF" stop-opacity="0"/>
+        <stop offset=".4" stop-color="#A9D7FF" stop-opacity=".7"/>
+        <stop offset="1" stop-color="#A9D7FF" stop-opacity=".2"/>
+      </linearGradient>
+      <linearGradient id="tRing" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#A9D7FF" stop-opacity=".34"/>
+        <stop offset="1" stop-color="#A9D7FF" stop-opacity=".10"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" stroke="url(#tRing)" stroke-width="1.1" class="drift">
+      <circle cx="196" cy="140" r="64"/><circle cx="196" cy="140" r="118"/><circle cx="196" cy="140" r="178"/>
+      <circle cx="196" cy="140" r="246"/><circle cx="196" cy="140" r="320"/>
+    </g>
+    <path class="drawline" d="M-20 270 C145 240 215 165 355 211 S582 330 730 236 S1000 154 1148 236 S1330 277 1460 199"
+      fill="none" stroke="url(#tFade)" stroke-width="1.7" stroke-linejoin="round"/>
+    <g stroke="#A9D7FF" stroke-opacity=".20" stroke-width="1" fill="none">
+      <path d="M980 96 L1108 168 L1250 104 L1372 190"/>
+      <path d="M1108 168 L1150 300 L1250 104"/>
+      <path d="M1150 300 L1372 190"/>
+    </g>
+    <g fill="#A9D7FF" fill-opacity=".34">
+      <circle cx="980" cy="96" r="3.4" class="flicker"/><circle cx="1108" cy="168" r="3.4"/>
+      <circle cx="1250" cy="104" r="3.4" class="flicker"/><circle cx="1372" cy="190" r="3.4"/><circle cx="1150" cy="300" r="3.4"/>
+    </g>
+  </svg>
+
+  <!-- Dotted Colorado terrain motif — mountains, trails and community-growth rings -->
+  <div class="dither" id="dither" aria-hidden="true">
+    <svg viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice">
+      <defs>
+        <pattern id="dot7" width="7" height="7" patternUnits="userSpaceOnUse">
+          <circle cx="3.5" cy="3.5" r="1.75" fill="#9BD7F5"/>
+        </pattern>
+        <pattern id="dot10" width="11" height="11" patternUnits="userSpaceOnUse">
+          <circle cx="5.5" cy="5.5" r="2" fill="#A9D7FF"/>
+        </pattern>
+        <pattern id="dot14" width="16" height="16" patternUnits="userSpaceOnUse">
+          <circle cx="8" cy="8" r="2.2" fill="#A9D7FF"/>
+        </pattern>
+
+        
+        <linearGradient id="dFade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#fff" stop-opacity=".35"/>
+          <stop offset=".45" stop-color="#fff" stop-opacity=".95"/>
+          <stop offset="1" stop-color="#fff" stop-opacity=".25"/>
+        </linearGradient>
+        <linearGradient id="dFade2" x1="0" y1="0" x2=".3" y2="1">
+          <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+          <stop offset="1" stop-color="#fff" stop-opacity=".08"/>
+        </linearGradient>
+
+        <!-- dotted mountain / landscape emblem instead of human or healthcare symbolism -->
+        <mask id="emblem">
+          <g fill="url(#dFade)">
+            <path d="M-315 160 L-190 -48 L-112 48 L30 -176 L160 14 L233 -88 L330 160 Z"/>
+            <path d="M-320 185 C-190 110 -92 197 20 138 S205 118 320 165 L320 258 L-320 258Z"/>
+          </g>
+          <g fill="none" stroke="#fff" stroke-width="19" stroke-linecap="round" opacity=".96">
+            <path d="M-295 210 C-196 160 -91 252 12 185 S198 139 297 184"/>
+          </g>
+        </mask>
+
+        <!-- subtle terrain and community contours along the lower edge -->
+        <mask id="arcs">
+          <g fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="54">
+            <path d="M-60 560 A 420 420 0 0 1 780 560" stroke-opacity=".55"/>
+            <path d="M300 560 A 560 560 0 0 1 1420 560" stroke-opacity=".35"/>
+            <path d="M-200 560 A 300 300 0 0 1 400 560" stroke-opacity=".7"/>
+          </g>
+        </mask>
+      </defs>
+
+      <!-- dotted arcs across the base -->
+      <rect width="1440" height="560" fill="url(#dot14)" mask="url(#arcs)" opacity=".7"/>
+
+      <!-- regional mountain motif, large on the right -->
+      <g transform="translate(1092 300) scale(1.16)">
+        <rect x="-360" y="-360" width="720" height="720" fill="url(#dot7)" mask="url(#emblem)"/>
+      </g>
+      <!-- a smaller terrain echo on the left -->
+      <g transform="translate(232 372) scale(.62)" opacity=".5">
+        <rect x="-360" y="-360" width="720" height="720" fill="url(#dot10)" mask="url(#emblem)"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- dotted echo, upper right -->
+  <svg class="dither-2" viewBox="0 0 720 320" aria-hidden="true">
+    <defs>
+      <pattern id="dot2" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="1.9" fill="#A9D7FF"/></pattern>
+      <mask id="ripple">
+        <g fill="none" stroke="#fff" stroke-width="26">
+          <circle cx="360" cy="300" r="90" stroke-opacity=".85"/>
+          <circle cx="360" cy="300" r="170" stroke-opacity=".55"/>
+          <circle cx="360" cy="300" r="256" stroke-opacity=".3"/>
+        </g>
+      </mask>
+    </defs>
+    <rect width="720" height="320" fill="url(#dot2)" mask="url(#ripple)"/>
+  </svg>
+
+  <div class="wrap hero">
+    <span class="rise" style="display:inline-flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <span class="eyebrow">Craig &amp; Moffat County, Colorado</span>
+      
+    </span>
+    <h1 class="rise">Investing in our<br><span class="it">local future.</span></h1>
+
+    <div class="hero-grid">
+      <div class="rise">
+        <p class="lede">MEDA invests coal settlement funds and uses the returns to support jobs, new investment, and a stronger local economy in Craig and Moffat County, Colorado.</p>
+        <div class="hero-actions">
+          <a class="btn btn--white" href="documents.html"><span>View Public Documents</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="btn btn--glass" href="#about"><span>About MEDA</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+        <div class="hero-controls">
+          <button class="ctrl" id="motionBtn" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></svg>
+            <span id="motionLabel">Pause background motion</span>
+          </button>
+        </div>
+      </div>
+
+      <aside class="hero-side rise">
+        <div class="ph"><img class="face-safe" src="assets/media/hero-records.webp" alt="A person writing in a planner beside a document"></div>
+        <div class="in">
+          <div class="k">Latest <span>minutes</span></div>
+          <p>Sample board meeting minutes · October 15, 2026. Earlier examples are available in the archive.</p>
+          <a href="assets/records/sample-minutes-2026-10-15.pdf" target="_blank" rel="noopener" aria-label="Open latest sample minutes PDF (new tab)">Open sample PDF <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="strip rise">
+      <div class="ph"><img class="face-safe" src="assets/media/strip-landscape.webp" alt="Tree-covered foothills and mountains in Colorado"><span class="cap">Local priorities</span></div>
+      <div class="ph"><img class="face-safe" src="assets/media/strip-board.webp" alt="People seated around a long meeting table"><span class="cap">Board meetings</span></div>
+      <div class="ph"><img class="face-safe" src="assets/media/strip-records.webp" alt="A person reviewing papers beside a laptop"><span class="cap">Public records</span></div>
+      <div class="ph"><img src="assets/media/strip-partners.webp" alt="Hands joined above a shared workspace"><span class="cap">Community partners</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="padding-top:clamp(26px,3vw,42px)">
+  <div class="marquee">
+    <div class="marquee-label">MEDA at a glance</div>
+    <div class="marquee-track" id="mq">
+      <span>Craig, Colorado</span><span>Moffat County</span><span>Local jobs</span><span>Capital investment</span><span>Stable tax base</span><span>Public records</span><span>Volunteer board</span><span>Community partners</span><span>Local oversight</span><span>Long-term investment</span>
+    </div>
+  </div>
+  <div class="mint-rule"></div>
+</div>
+
+<!-- ══════════ 02 · AUDIENCE PATHWAYS ══════════ -->
+<section class="sec sec-tint" id="pathways">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div><span class="n">02 — Start here</span><h2 style="margin-top:14px">Find your <span class="it uline">starting point.</span></h2></div>
+      <p class="lede">Choose the role that best fits what you need to do.</p>
+    </div>
+    <div class="paths rise" role="tablist" aria-label="Choose your role">
+      <button class="path" role="tab" aria-selected="true" data-p="0">Residents</button>
+      <button class="path" role="tab" aria-selected="false" data-p="1">Local businesses</button>
+      <button class="path" role="tab" aria-selected="false" data-p="2">Civic partners</button>
+      <button class="path" role="tab" aria-selected="false" data-p="3">Researchers</button>
+      <button class="path" role="tab" aria-selected="false" data-p="4">Board &amp; governance</button>
+    </div>
+    <div class="path-panel rise" id="pathPanel" role="tabpanel">
+      <figure class="path-media" style="margin:0">
+        <img id="pImg" src="assets/media/paths-residents.webp" alt="People talking across a small business counter" loading="lazy">
+        <figcaption class="cop"><div class="who" id="pWho"></div><p id="pSub"></p></figcaption>
+      </figure>
+      <div class="path-links" id="pLinks"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 03 · RESOURCE FINDER ══════════ -->
+<section class="sec on-dark" id="finder" style="padding-top:0">
+  <div class="wrap">
+    <div class="finder rise">
+      <div class="finder-bg"><img src="assets/media/finder-desk.webp" alt="A desk with a laptop, notebook and documents"></div>
+      <span class="eyebrow">03 — Find it fast</span>
+      <h2 style="margin-top:20px">Find a <span class="it">public record.</span></h2>
+      <p class="lede" style="margin-top:16px">Search for minutes, bylaws, policies, or a meeting year.</p>
+      <form class="searchbar" id="finderForm" action="documents.html#archive" method="get" role="search">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        <label for="q" style="position:absolute;left:-9999px">Search public documents</label>
+        <input id="q" name="q" type="search" placeholder="Search documents or a year" maxlength="120" autocomplete="off">
+        <button class="btn" type="submit" aria-label="Search public documents"><span>Search</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </form>
+      <div class="pops">
+        <span class="lbl">Quick searches</span>
+        <button class="chip" name="q" value="minutes" form="finderForm">Meeting minutes</button><button class="chip" name="q" value="bylaws" form="finderForm">Bylaws</button>
+        <button class="chip" name="q" value="establishment" form="finderForm">Establishment agreement</button><button class="chip" name="q" value="policies" form="finderForm">Policies</button>
+        <button class="chip" name="q" value="procedures" form="finderForm">Procedures</button><button class="chip" name="q" value="2026" form="finderForm">2026</button>
+      </div>
+      <div style="margin-top:24px"><a class="btn btn--white" href="documents.html#archive"><span>Browse the archive</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+      <p class="finder-help">Need an official copy or an accessible format? <a href="index.html#contact">Contact MEDA</a>.</p>
+
+      <div class="finder-meta">
+        <span><b>Minutes</b> &nbsp;meeting records</span>
+        <span><b>Bylaws</b> &nbsp;board governance</span>
+        <span><b>Founding</b> &nbsp;establishment agreement</span>
+        <span><b>Policies</b> &nbsp;operating guidance</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 04 · PILLARS ══════════ -->
+<section class="sec" id="about" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div><span class="n">04 — About MEDA</span><h2 style="margin-top:14px">What MEDA <span class="it uline">does.</span></h2></div>
+      <p class="lede">The City of Craig and Moffat County formed MEDA to manage settlement funds tied to the closure of Craig Station and invest the returns in the local economy.</p>
+    </div>
+    <div class="pillars" id="pillars-grid"></div>
+  </div>
+</section>
+
+<!-- ══════════ 05 · EVIDENCE → ACTION ══════════ -->
+<section class="sec" id="evidence" style="padding-top:0">
+  <div class="wrap">
+    <div class="evidence">
+      <div class="sec-head rise">
+        <div><span class="n">05 — How it works</span><h2 style="margin-top:14px">From settlement <span class="it">to local investment.</span></h2></div>
+        <p class="lede">Follow the four parts of MEDA’s role, from managing the settlement to supporting projects with local benefits.</p>
+      </div>
+      <div class="pipe-wrap rise">
+        <div class="track" role="tablist" aria-label="How MEDA invests" id="track"></div>
+        <article class="case" id="casePanel" role="tabpanel">
+          <div class="case-tag">
+            <div class="bg"><img id="cImg" src="assets/media/stage-settlement.webp" alt="" loading="lazy"></div>
+            <div><div class="p" id="cKicker"></div><h3 id="cTitle"></h3></div>
+            <div class="prog" id="cProg" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="case-body">
+            <p class="quote" id="cQuote"></p>
+            <p class="detail" id="cDetail"></p>
+            <div class="metrics" id="cMetrics"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 06 · INITIATIVES ══════════ -->
+<section class="sec" id="initiatives">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div><span class="n">06 — Public documents</span><h2 style="margin-top:14px">Explore the <span class="it uline">public records.</span></h2>
+        <p class="lede" style="margin-top:14px">Use the archive to explore document types and preview sample files. Contact MEDA for an official copy.</p></div>
+      <a class="btn btn--ghost" href="documents.html#archive"><span>Browse the archive</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+    <div class="inits" id="inits"></div>
+  </div>
+</section>
+
+<!-- ══════════ 07 · IMPACT ══════════ -->
+<section class="impact on-dark" id="impact">
+  <div class="impact-bg"><img src="assets/media/impact-work.webp" alt="An overhead view of a small business workspace"></div>
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div><span class="eyebrow">07 — Economic priorities</span><h2 style="margin-top:20px">What we <span class="it" style="color:var(--mint)">work toward.</span></h2></div>
+      <p class="lede">MEDA focuses on the long-term needs of Craig and Moffat County as the local economy adapts to the coal transition.</p>
+    </div>
+    <div class="impact-grid rise">
+      <div class="stat word"><b>Quality <i>jobs</i></b><span>Support projects that create or retain jobs for local residents.</span></div>
+      <div class="stat word"><b>New <i>investment</i></b><span>Attract capital for facilities, equipment, and infrastructure.</span></div>
+      <div class="stat word"><b>Stable <i>tax base</i></b><span>Help sustain the local tax base that supports public services.</span></div>
+      <div class="stat word"><b>Local <i>oversight</i></b><span>Keep decisions with a board appointed by local public bodies.</span></div>
+    </div>
+    <div class="story rise">
+      <div>
+        <blockquote>Invest settlement funds with the long-term needs of <span class="it">Craig and Moffat County</span> in view.</blockquote>
+        <div class="who">
+          <p><b>What guides MEDA</b>Local jobs, capital investment, and a stable tax base.</p>
+        </div>
+      </div>
+      <figure class="story-media" style="margin:0">
+        <img src="assets/media/cedar-mountain.webp" alt="Cedar Mountain rising above the open landscape near Craig, Colorado">
+        <figcaption>Cedar Mountain near Craig, Colorado.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 08 · PEOPLE ══════════ -->
+<section class="sec people" id="board">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div><span class="n">08 — Governance</span><h2 style="margin-top:14px">Our board and <span class="it">local partners.</span></h2>
+        <p class="lede" style="margin-top:14px">A five-member volunteer board governs MEDA. The Craig City Council, Moffat County Board of County Commissioners, and Moffat County School District RE-1 appoint its members.</p></div>
+      <div class="rail-nav">
+        <button class="icon-btn" id="railPrev" aria-label="Previous governance card"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
+        <button class="icon-btn" id="railNext" aria-label="Next governance card"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="people-rail rise" id="rail"></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px" class="rise">
+      <a class="btn" href="https://discovercraig.com/about-us/meda/"><span>View the board listing</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="btn btn--ghost" href="documents.html"><span>View Public Documents</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 09 · LATEST INSIGHTS ══════════ -->
+<section class="sec sec-tint" id="insights">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <div><span class="n">09 — Records guides</span><h2 style="margin-top:14px">How to use <span class="it uline">the archive.</span></h2>
+        <p class="lede" style="margin-top:14px">Find the right file and learn where to ask for an official copy.</p></div>
+      <a class="btn btn--ghost" href="documents.html#process"><span>View the records guide</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+    <div class="posts" id="posts"></div>
+  </div>
+</section>
+
+<!-- ══════════ 10 · PRESS / EXPERTS ══════════ -->
+<section class="sec" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="press">
+      <div class="press-card a rise">
+        <div class="bg"><img src="assets/media/contact-workspace.webp" alt="A person working with a computer at a desk"></div>
+        <div>
+          <span class="n">10 — Records help</span>
+          <h3 style="margin-top:16px">Need an official record?</h3>
+          <p>Share the document title or meeting date when you ask for a copy. The demo archive contains examples you can use to try the site.</p>
+        </div>
+        <a class="btn btn--white" href="documents.html#process"><span>How to find a record</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="press-card b rise">
+        <div>
+          <span class="n">Contact</span>
+          <h3 style="margin-top:16px">Contact MEDA</h3>
+          <p>For general questions or accessible copies, reach the board contact listed on MEDA’s current page. <span class="contact-address">Mailing address · 1198 W. Victory Way, Suite 104, Craig, CO 81625</span></p>
+          <div class="quicklinks">
+            <a href="tel:+19708249115">970-824-9115</a><a href="https://discovercraig.com/about-us/meda/">Official MEDA page</a>
+          </div>
+        </div>
+        <a class="btn btn--ghost" href="mailto:tbohrer@moffatcounty.net"><span>Email the board contact</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 11 · NEWSLETTER ══════════ -->
+<section class="sec" id="newsletter" style="padding-top:0">
+  <div class="wrap">
+    <div class="news rise">
+      <div class="in">
+        <span class="n">11 — Archive shortcut</span>
+        <h2 style="margin-top:16px">Narrow your <span class="it">record search.</span></h2>
+        <p class="lede">Choose a document type and add a meeting year if you know it.</p>
+        <div class="news-form">
+          <div class="interests">
+            <button class="int" type="button" data-topic="" aria-pressed="true">All records</button><button class="int" type="button" data-topic="minutes" aria-pressed="false">Minutes</button>
+            <button class="int" type="button" data-topic="bylaws" aria-pressed="false">Bylaws</button><button class="int" type="button" data-topic="establishment" aria-pressed="false">Founding documents</button>
+            <button class="int" type="button" data-topic="policies" aria-pressed="false">Policies</button><button class="int" type="button" data-topic="procedures" aria-pressed="false">Procedures</button>
+          </div>
+          <form class="news-row" id="archiveForm" action="documents.html#archive" method="get" novalidate>
+            <label for="recordYear" class="visually-hidden">Meeting year (optional)</label>
+            <input id="recordYear" name="q" inputmode="numeric" type="text" placeholder="Meeting year (optional)" pattern="20[0-9]{2}" maxlength="4">
+            <button class="btn" type="submit"><span>Find records</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+          </form>
+          <p class="field-error" id="yearError" role="alert">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5M12 16.2v.1"/></svg>
+            <span>Enter a four-digit year such as 2026.</span>
+          </p>
+          <p class="news-note">Leave the year blank to see every example for the selected document type.</p>
+        </div>
+      </div>
+      <div class="news-media"><img class="face-safe" src="assets/media/search-archive.webp" alt="Hands using a laptop to find information"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ 12 · FOOTER ══════════ -->
+<footer>
+  <!-- Subtle abstract line art: population contours, a landscape contour, and a network of communities -->
+  <svg class="foot-art" viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="devStroke" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#A9D7FF" stop-opacity=".05"/>
+        <stop offset="1" stop-color="#A9D7FF" stop-opacity=".22"/>
+      </linearGradient>
+      <linearGradient id="barFill" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="#A9D7FF" stop-opacity=".08"/>
+        <stop offset="1" stop-color="#A9D7FF" stop-opacity=".24"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" stroke="url(#devStroke)" stroke-width="1.2">
+      <path class="dev-line" d="M86 560 L250 500 L420 522 L600 430 L776 452 L928 392"/>
+      <path class="dev-line" d="M1038 188 L1120 164 L1200 204 L1285 178 L1360 224" style="animation-delay:1.1s"/>
+    </g>
+    <g class="flicker" fill="#A9D7FF" fill-opacity=".22">
+      <circle cx="86" cy="560" r="4"/><circle cx="250" cy="500" r="4"/><circle cx="420" cy="522" r="4"/><circle cx="600" cy="430" r="4"/><circle cx="776" cy="452" r="4"/><circle cx="928" cy="392" r="4"/>
+      <circle cx="1038" cy="188" r="3.5"/><circle cx="1120" cy="164" r="3.5"/><circle cx="1200" cy="204" r="3.5"/><circle cx="1285" cy="178" r="3.5"/><circle cx="1360" cy="224" r="3.5"/>
+    </g>
+    <g class="dev-bars" transform="translate(1188 468)">
+      <rect x="0" y="98" width="14" height="54" rx="7" fill="url(#barFill)"/>
+      <rect x="30" y="70" width="14" height="82" rx="7" fill="url(#barFill)"/>
+      <rect x="60" y="42" width="14" height="110" rx="7" fill="url(#barFill)"/>
+      <rect x="90" y="12" width="14" height="140" rx="7" fill="url(#barFill)"/>
+    </g>
+    <g stroke="#A9D7FF" stroke-opacity=".14" fill="none">
+      <path d="M56 118h132"/><path d="M56 146h188"/><path d="M56 174h156"/>
+    </g>
+  </svg>
+
+  <div class="wrap">
+    <div class="foot-lead foot-brand">
+      <div class="who">
+        <a class="logo-chip" href="index.html" aria-label="MEDA home"><img id="logoFoot" src="assets/meda-white.svg" alt="Moffat Economic Development Authority" width="118" height="80"></a>
+        <p>Investing in the long-term economic future of Craig and Moffat County, Colorado.</p>
+      </div>
+      <a class="btn btn--white" href="documents.html"><span>Public Documents</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+
+
+    <div class="foot-top">
+      <div class="foot-col"><h5>About MEDA</h5><ul><li><a href="index.html#about">Who we are</a></li><li><a href="index.html#evidence">How MEDA works</a></li><li><a href="index.html#impact">Local priorities</a></li></ul></div>
+      <div class="foot-col"><h5>Public records</h5><ul><li><a href="documents.html#archive">Document archive</a></li><li><a href="documents.html?type=minutes#archive">Meeting minutes</a></li><li><a href="documents.html#governing">Governing documents</a></li></ul></div>
+      <div class="foot-col"><h5>Governance</h5><ul><li><a href="index.html#board">Board of Directors</a></li><li><a href="documents.html?q=establishment#archive">Establishment agreement</a></li><li><a href="documents.html?q=bylaws#archive">Bylaws</a></li></ul></div>
+      <div class="foot-col"><h5>Community partners</h5><ul><li><a href="https://www.cityofcraig.org/">City of Craig</a></li><li><a href="https://moffatcounty.colorado.gov/">Moffat County</a></li><li><a href="https://www.moffatsd.org/">Moffat County School District</a></li></ul></div>
+      <div class="foot-col"><h5>Connect</h5><ul><li><a href="index.html#contact">Contact MEDA</a></li><li><a href="mailto:tbohrer@moffatcounty.net">Board contact</a></li><li><a href="documents.html#apply">Records help</a></li></ul></div>
+    </div>
+
+
+    <div class="foot-bottom">
+      <div class="socials" aria-label="Social media icon concept">
+        <span class="social-icon" role="img" aria-label="Facebook (design preview; no account linked)" title="Facebook · design preview">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8.2V6.6c0-.64.42-.91 1.04-.91h2V2.3a28 28 0 0 0-2.92-.19c-2.9 0-4.88 1.77-4.88 5.02V8.2H6v3.78h3.24V22h4.01v-10.02h3.14l.5-3.78H14Z"/></svg>
+        </span>
+        <span class="social-icon" role="img" aria-label="Instagram (design preview; no account linked)" title="Instagram · design preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="social-icon" role="img" aria-label="LinkedIn (design preview; no account linked)" title="LinkedIn · design preview">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.1 8.6H2.3V22h2.8V8.6ZM3.7 2a1.65 1.65 0 1 0 0 3.3A1.65 1.65 0 0 0 3.7 2Zm6 6.6H6.9V22h2.8v-7.3c0-1.95.58-3.37 2.54-3.37 1.91 0 2.05 1.55 2.05 3.5V22h2.81v-8.14c0-3.15-.68-5.57-4.35-5.57-1.76 0-2.94.97-3.42 1.89h-.04V8.6Z" transform="translate(1.5 0)"/></svg>
+        </span>
+        <span class="social-icon" role="img" aria-label="YouTube (design preview; no account linked)" title="YouTube · design preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4.5"/><path d="m10 9 6 3-6 3Z" fill="currentColor" stroke="none"/></svg>
+        </span>
+      </div>
+      <div class="foot-legal"><a href="https://discovercraig.com/about-us/meda/">Official MEDA information</a><a href="documents.html#sample-note">About this demo</a><span>Accessibility</span><span>MEDA website demonstration</span></div>
+    </div>
+
+    <div class="designed-by">
+      <span class="lbl">Website<br>concept by</span>
+      <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNjk5LjUxIDgwMCI+CiAgPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDMwLjUuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDIuMS40IEJ1aWxkIDMpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxNTMuMjcgMTU0LjMgNjM1LjkyIDE1NC4zMSA2MzUuOTIgMzE3LjIxIDY4OS41NCAzMTcuMjEgNjg5LjU0IDEwMCA5OS42NiAxMDAgOTkuNjYgNzAwIDY4OS41MyA3MDAgNjg5LjUzIDU5MS40MSA2MzUuOTIgNTkxLjQxIDYzNS45MiA2NDUuNzEgMTUzLjI3IDY0NS43MSAxNTMuMjcgMTU0LjMgMTUzLjI3IDE1NC4zIi8+CiAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTQ3Mi42MSw1MTIuMTJjLTcsMy41LTIyLjc1LDcuMjUtNDMuMjUsNy4yNS01OC4yNSwwLTg4LjI1LTM2LjI1LTg4LjI1LTg0LjI1LDAtNTcuNSw0MS04OS41LDkyLTg5LjUsMTkuNzUsMCwzNC43NSw0LDQxLjUsNy41bC03Ljc1LDMwLjI1Yy03Ljc1LTMuMjUtMTguNS02LjI1LTMyLTYuMjUtMzAuMjUsMC01My43NSwxOC4yNS01My43NSw1NS43NSwwLDMzLjc1LDIwLDU1LDU0LDU1LDExLjUsMCwyNC4yNS0yLjUsMzEuNzUtNS41bDUuNzUsMjkuNzVaIi8+CiAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTYxMi4zNiw0NTQuMzdjMCw0NC43NS0zMS43NSw2NS4yNS02NC41LDY1LjI1LTM1Ljc1LDAtNjMuMjUtMjMuNS02My4yNS02M3MyNi02NC43NSw2NS4yNS02NC43NSw2Mi41LDI1Ljc1LDYyLjUsNjIuNVpNNTIzLjg2LDQ1NS42MmMwLDIxLDguNzUsMzYuNzUsMjUsMzYuNzUsMTQuNzUsMCwyNC4yNS0xNC43NSwyNC4yNS0zNi43NSwwLTE4LjI1LTctMzYuNzUtMjQuMjUtMzYuNzUtMTguMjUsMC0yNSwxOC43NS0yNSwzNi43NVoiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjM1Ljg2LDQzMy42MmMwLTE1LjI1LS41LTI4LjI1LTEtMzloMzJsMS43NSwxNi41aC43NWM1LjI1LTcuNzUsMTYtMTkuMjUsMzctMTkuMjUsMTUuNzUsMCwyOC4yNSw4LDMzLjUsMjAuNzVoLjVjNC41LTYuMjUsMTAtMTEuMjUsMTUuNzUtMTQuNzUsNi43NS00LDE0LjI1LTYsMjMuMjUtNiwyMy41LDAsNDEuMjUsMTYuNSw0MS4yNSw1M3Y3MmgtMzd2LTY2LjVjMC0xNy43NS01Ljc1LTI4LTE4LTI4LTguNzUsMC0xNSw2LTE3LjUsMTMuMjUtMSwyLjc1LTEuNSw2Ljc1LTEuNSw5Ljc1djcxLjVoLTM3di02OC41YzAtMTUuNS01LjUtMjYtMTcuNS0yNi05Ljc1LDAtMTUuNSw3LjUtMTcuNzUsMTMuNzUtMS4yNSwzLTEuNSw2LjUtMS41LDkuNXY3MS4yNWgtMzd2LTgzLjI1WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04NTAuODYsNDM1LjYyYzAtMTYtLjUtMjkuNzUtMS00MWgzM2wxLjc1LDE3aC41YzktMTMsMjMtMTkuNzUsNDAuNzUtMTkuNzUsMjYuNzUsMCw1MC43NSwyMy4yNSw1MC43NSw2Mi4yNSwwLDQ0LjUtMjguMjUsNjUuNS01NS41LDY1LjUtMTQuNzUsMC0yNi4yNS02LTMxLjc1LTE0aC0uNXY2MC43NWgtMzh2LTEzMC43NVpNODg4Ljg2LDQ2NC4zN2MwLDMsLjI1LDUuNzUuNzUsOCwyLjUsMTAuMjUsMTEuMjUsMTgsMjIuMjUsMTgsMTYuNSwwLDI2LjI1LTEzLjc1LDI2LjI1LTM0LjUsMC0xOS41LTguNzUtMzQuMjUtMjUuNzUtMzQuMjUtMTAuNzUsMC0yMC4yNSw4LTIyLjc1LDE5LjI1LS41LDItLjc1LDQuNS0uNzUsNi43NXYxNi43NVoiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTExNS42LDQ3Ny42MmMwLDE2LC41LDI5LDEsMzkuMjVoLTMzbC0xLjc1LTE3LjI1aC0uNzVjLTQuNzUsNy41LTE2LjI1LDIwLTM4LjI1LDIwLTI0Ljc1LDAtNDMtMTUuNS00My01My4yNXYtNzEuNzVoMzguMjV2NjUuNzVjMCwxNy43NSw1Ljc1LDI4LjUsMTksMjguNSwxMC41LDAsMTYuNS03LjI1LDE5LTEzLjI1LDEtMi4yNSwxLjI1LTUuMjUsMS4yNS04LjI1di03Mi43NWgzOC4yNXY4M1oiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTE0Ni4xLDQzMy42MmMwLTE1LjI1LS41LTI4LjI1LTEtMzloMzNsMS43NSwxNi43NWguNzVjNS03Ljc1LDE3LjUtMTkuNSwzNy43NS0xOS41LDI1LDAsNDMuNzUsMTYuNSw0My43NSw1Mi41djcyLjVoLTM4di02Ny43NWMwLTE1Ljc1LTUuNS0yNi41LTE5LjI1LTI2LjUtMTAuNSwwLTE2Ljc1LDcuMjUtMTkuMjUsMTQuMjUtMSwyLjI1LTEuNSw2LTEuNSw5LjV2NzAuNWgtMzh2LTgzLjI1WiIvPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjkyLjYsNDMzLjYyYzAtMTUuMjUtLjUtMjguMjUtMS0zOWgzM2wxLjc1LDE2Ljc1aC43NWM1LTcuNzUsMTcuNS0xOS41LDM3Ljc1LTE5LjUsMjUsMCw0My43NSwxNi41LDQzLjc1LDUyLjV2NzIuNWgtMzh2LTY3Ljc1YzAtMTUuNzUtNS41LTI2LjUtMTkuMjUtMjYuNS0xMC41LDAtMTYuNzUsNy4yNS0xOS4yNSwxNC4yNS0xLDIuMjUtMS41LDYtMS41LDkuNXY3MC41aC0zOHYtODMuMjVaIi8+CiAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTE0NjguMzUsNDY3Ljg3YzEuMjUsMTUuNzUsMTYuNzUsMjMuMjUsMzQuNSwyMy4yNSwxMywwLDIzLjUtMS43NSwzMy43NS01bDUsMjUuNzVjLTEyLjUsNS0yNy43NSw3LjUtNDQuMjUsNy41LTQxLjUsMC02NS4yNS0yNC02NS4yNS02Mi4yNSwwLTMxLDE5LjI1LTY1LjI1LDYxLjc1LTY1LjI1LDM5LjUsMCw1NC41LDMwLjc1LDU0LjUsNjEsMCw2LjUtLjc1LDEyLjI1LTEuMjUsMTVoLTc4Ljc1Wk0xNTEzLjEsNDQxLjg3YzAtOS4yNS00LTI0Ljc1LTIxLjUtMjQuNzUtMTYsMC0yMi41LDE0LjUtMjMuNSwyNC43NWg0NVoiLz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTU3MS4xLDMzOS4zN2gzOHYxNzcuNWgtMzh2LTE3Ny41WiIvPgogIDxnPgogICAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTExMTIuNyw3MDEuNDZ2LTExMC43MWg0My42YzEyLjAzLDAsMjIuNDIsMi4yMywzMS4xNiw2LjcsOC43NSw0LjQ3LDE1LjQ5LDEwLjg0LDIwLjIzLDE5LjEzLDQuNzQsOC4yOSw3LjExLDE4LjEzLDcuMTEsMjkuNTJzLTIuMzksMjEuMS03LjE4LDI5LjM5Yy00Ljc4LDguMjktMTEuNTUsMTQuNjktMjAuMywxOS4ycy0xOS4wOSw2Ljc3LTMxLjAzLDYuNzdoLTQzLjZaTTExMzUuOCw2ODEuNzdoMjAuNWMxMS40OCwwLDIwLjIxLTMuMjYsMjYuMTctOS43Nyw1Ljk3LTYuNTEsOC45NS0xNS4xNSw4Ljk1LTI1LjlzLTIuOTktMTkuNS04Ljk1LTI1Ljk3Yy01Ljk3LTYuNDctMTQuNjktOS43LTI2LjE3LTkuN2gtMjAuNXY3MS4zNVoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjQxLjg2LDYxMS4zOWMtMy40NiwwLTYuNC0xLjIxLTguODItMy42Mi0yLjQyLTIuNDEtMy42Mi01LjM1LTMuNjItOC44MnMxLjIxLTYuNCwzLjYyLTguODJjMi40MS0yLjQxLDUuMzUtMy42Miw4LjgyLTMuNjJzNi40LDEuMjEsOC44MiwzLjYyYzIuNDEsMi40MiwzLjYyLDUuMzUsMy42Miw4Ljgycy0xLjIxLDYuNC0zLjYyLDguODJjLTIuNDIsMi40Mi01LjM1LDMuNjItOC44MiwzLjYyWk0xMjMwLjUxLDcwMS40NnYtODIuMDFoMjIuNjl2ODIuMDFoLTIyLjY5WiIvPgogICAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTEzMTEuMDEsNzM1LjljLTEyLjMsMC0yMi4zLTIuNDgtMzAtNy40NS03LjctNC45Ny0xMi4yOC0xMS44Ny0xMy43NC0yMC43MWgyNC4wNWMyLjE5LDYuNzQsOC41MiwxMC4xMSwxOSwxMC4xMSw3LjExLDAsMTIuNTUtMS42MiwxNi4zMy00Ljg1LDMuNzgtMy4yNCw1LjY3LTcuOTEsNS42Ny0xNC4wMXYtMTAuOTNoLS42OGMtMi40Niw0LjM3LTUuODYsNy43LTEwLjE4LDkuOTgtNC4zMywyLjI4LTkuNSwzLjQyLTE1LjUxLDMuNDItNy43NSwwLTE0LjQ3LTEuNzEtMjAuMTYtNS4xMi01LjctMy40Mi0xMC4xMS04LjI3LTEzLjI2LTE0LjU2cy00LjcyLTEzLjY3LTQuNzItMjIuMTRjMC0xMi43NiwzLjUzLTIyLjkyLDEwLjU5LTMwLjQ4LDcuMDYtNy41NiwxNi43NC0xMS4zNCwyOS4wNC0xMS4zNCw2LjkyLDAsMTIuODIsMS4zMiwxNy43LDMuOTYsNC44NywyLjY0LDguNzcsNi4zMywxMS42OSwxMS4wN2g1Ljc0di0xMy4zOWgyMi45NnYyMi40MmgtMTEuMjF2NTcuNDFjMCwxMS42Ni0zLjc0LDIwLjY4LTExLjIxLDI3LjA2LTcuNDcsNi4zOC0xOC4xOCw5LjU3LTMyLjEyLDkuNTdaTTEzMTEuNTYsNjgxLjc3YzYuMjksMCwxMS4yMS0xLjczLDE0Ljc2LTUuMTksMy41NS0zLjQ2LDUuMzMtOC4yLDUuMzMtMTQuMjF2LTUuNzRjMC01LjkyLTEuOC0xMC41OS01LjQtMTQuMDEtMy42LTMuNDItOC41LTUuMTItMTQuNjktNS4xMi02LjY1LDAtMTEuODIsMS45Ni0xNS41MSw1Ljg4LTMuNjksMy45Mi01LjU0LDkuMzktNS41NCwxNi40czEuODUsMTIuNDQsNS41NCwxNi4yNiw4Ljg2LDUuNzQsMTUuNTEsNS43NFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzkwLjAxLDYxMS4zOWMtMy40NiwwLTYuNC0xLjIxLTguODItMy42Mi0yLjQyLTIuNDEtMy42Mi01LjM1LTMuNjItOC44MnMxLjIxLTYuNCwzLjYyLTguODIsNS4zNS0zLjYyLDguODItMy42Miw2LjQsMS4yMSw4LjgyLDMuNjJjMi40MSwyLjQyLDMuNjIsNS4zNSwzLjYyLDguODJzLTEuMjEsNi40LTMuNjIsOC44Mi01LjM1LDMuNjItOC44MiwzLjYyWk0xMzc4LjY3LDcwMS40NnYtODIuMDFoMjIuNjl2ODIuMDFoLTIyLjY5WiIvPgogICAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTE0NDUuNzgsNzAxLjQ2Yy01LjgzLDAtMTAuMzctMS40OC0xMy42LTQuNDQtMy4yNC0yLjk2LTQuODUtNy40OS00Ljg1LTEzLjZ2LTQ2LjJoLTE0LjA4di0xNy43N2gxNC4zNXYtMjQuNmgyMi4xNHYyNC42aDE5djE3Ljc3aC0xOC43MnY0Ni40N2gyMC42NHYxNy43N2gtMjQuODhaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTUwOS40Nyw3MDIuOTZjLTkuNjYsMC0xNy4yMi0yLjM1LTIyLjY5LTcuMDQtNS40Ny00LjY5LTguMi0xMC44Ny04LjItMTguNTIsMC04LjExLDIuODItMTQuMzUsOC40Ny0xOC43Miw1LjY1LTQuMzcsMTMuNzYtNi41NiwyNC4zMy02LjU2aDIzLjUxdi0zLjE0YzAtOC44NC01LjI5LTEzLjI2LTE1Ljg1LTEzLjI2LTkuMiwwLTE0Ljc2LDMuMTktMTYuNjcsOS41N2gtMjIuNTVjMS44Mi05LjAyLDYuMDYtMTUuODUsMTIuNzEtMjAuNSw2LjY1LTQuNjUsMTUuNDktNi45NywyNi41Mi02Ljk3LDEyLjIxLDAsMjEuNTMsMi43MywyNy45NSw4LjJzOS42NCwxMy40NCw5LjY0LDIzLjkydjI5LjExaDEwLjY2djIyLjQyaC0yMi45NnYtMTMuMzloLTUuNzRjLTIuODMsNC43NC02LjYxLDguNDEtMTEuMzQsMTEtNC43NCwyLjYtMTAuNjYsMy45LTE3Ljc3LDMuOVpNMTUxMi44OCw2ODUuNzRjNC4yOCwwLDguMDYtLjc3LDExLjM0LTIuMzIsMy4yOC0xLjU1LDUuODgtMy42Miw3Ljc5LTYuMjIsMS45MS0yLjYsMi44Ny01LjU0LDIuODctOC44MnYtMS4yM2gtMjIuNDJjLTguMiwwLTEyLjMsMy4wNS0xMi4zLDkuMTYsMCwzLjAxLDEuMTQsNS4zMywzLjQyLDYuOTcsMi4yOCwxLjY0LDUuMzgsMi40Niw5LjI5LDIuNDZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTU4MS40OSw3MDEuNDZ2LTExNC44MWgyMi42OXYxMTQuODFoLTIyLjY5WiIvPgogIDwvZz4KPC9zdmc+" alt="Compunnel Digital">
+    </div>
+
+    <!-- Giant wordmark, edge to edge -->
+    <div class="wordmark" aria-hidden="true">
+      <svg viewBox="0 0 1700 148" preserveAspectRatio="xMidYMid meet">
+        <text x="0" y="126" textLength="1700" lengthAdjust="spacingAndGlyphs" font-size="150">Development Authority</text>
+      </svg>
+    </div>
+  </div>
+</footer>
+
+<p class="credit">RFP website demonstration. Stock media from <a href="https://www.pexels.com/license/">Pexels</a>. Cedar Mountain photo by <a href="https://commons.wikimedia.org/wiki/File:Cedar_Mountain_(Moffat_County,_Colorado).JPG">Jeffrey Beall</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, resized and color adjusted).</p>
+
+<dialog class="site-search" id="searchDialog" aria-labelledby="search-title">
+  <div class="site-search-heading">
+    <h2 id="search-title">Search public documents</h2>
+    <form method="dialog"><button class="site-search-close" aria-label="Close search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></form>
+  </div>
+  <p>Enter a title, type, or year, such as bylaws or 2026.</p>
+  <form class="site-search-form" action="documents.html#archive" method="get" role="search">
+    <label class="visually-hidden" for="siteSearchInput">Search query</label>
+    <input type="search" id="siteSearchInput" name="q" placeholder="Search public documents" maxlength="120" autofocus>
+    <button class="btn" type="submit" aria-label="Search public documents"><span>Search</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+  </form>
+</dialog>
+
+
+<!-- ══════════ ACCESSIBILITY TOOLS ══════════ -->
+
+<!-- ══════════ MOBILE MENU ══════════ -->
+<div class="mnav" id="mobileNav" hidden>
+  <div class="mnav-scrim" data-close></div>
+  <div class="mnav-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <div class="mnav-head">
+      <span class="brand"><img id="markMnav" src="assets/meda-white.svg" alt="" aria-hidden="true" width="118" height="80">
+        <span class="lock"><b>Moffat Economic</b><span>Development Authority</span></span></span></span>
+      <button class="mnav-close" data-close aria-label="Close menu">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="mnav-links" aria-label="Mobile">
+        <a href="index.html" class="here" aria-current="page">Home <span>Current page</span></a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#board">Board</a>
+        <a href="documents.html?type=minutes#archive">Meeting Minutes</a>
+        <a href="documents.html">Public Documents</a>
+    </nav>
+    <div class="mnav-foot">
+      <a class="btn" href="index.html#contact"><span>Contact</span><span class="dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <p class="mnav-meta">Public information for Craig and Moffat County, Colorado.</p>
+    </div>
+  </div>
+</div>
+
+<button id="toTop" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+<div id="a11y-fab" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="12" cy="5.6" r="1.9"/>
+    <path d="M4.9 8.6c2.3.8 4.6 1.2 7.1 1.2s4.8-.4 7.1-1.2" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M12 9.8v4.4m0 0-2.4 5.2M12 14.2l2.4 5.2" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </svg>
+</div>
+
+<script>
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const ARROW='<span class="arrow"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>';
+const px=name=>`assets/media/${name}.webp`;
+
+
+const nav=document.getElementById('nav');
+const bar=document.getElementById('progress');
+const dith=document.getElementById('dither');
+const onScroll=()=>{
+  nav.classList.toggle('solid',scrollY>90);
+  const h=document.documentElement.scrollHeight-innerHeight;
+  bar.style.width=(h>0?(scrollY/h)*100:0)+'%';
+  if(dith&&!reduced&&scrollY<900) dith.style.transform='translateY('+(scrollY*0.16)+'px)';
+};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* Pause the hero video when it scrolls out of view */
+const hv=document.querySelector('.topshell-bg video');
+if(hv){
+  if(reduced) hv.pause();
+  new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting&&!reduced&&document.documentElement.dataset.motion!=='off')hv.play().catch(()=>{});
+    else hv.pause();
+  }),{threshold:.05}).observe(hv);
+}
+
+/* ── 02 Audience pathways ── */
+const PATHS=[
+  {
+    "img": "paths-residents",
+    "alt": "Two people talking at a small business counter",
+    "who": "I live in Craig or Moffat County.",
+    "sub": "Find records and learn how MEDA supports the local economy.",
+    "links": [
+      [
+        "See meeting minutes",
+        "Find the latest example and browse earlier records.",
+        "documents.html?type=minutes#archive"
+      ],
+      [
+        "Learn what MEDA does",
+        "Read about the settlement and local priorities.",
+        "index.html#about"
+      ],
+      [
+        "Contact the board",
+        "Ask about a document or request an accessible copy.",
+        "index.html#contact"
+      ]
+    ]
+  },
+  {
+    "img": "paths-businesses",
+    "alt": "A small business owner reviewing paperwork",
+    "who": "I own or operate a local business.",
+    "sub": "Learn which economic outcomes guide MEDA’s work.",
+    "links": [
+      [
+        "Explore local priorities",
+        "See how jobs, investment, and tax base guide the authority.",
+        "index.html#impact"
+      ],
+      [
+        "Understand MEDA’s role",
+        "Learn how settlement returns can support local projects.",
+        "index.html#evidence"
+      ],
+      [
+        "Ask a question",
+        "Find the published board contact.",
+        "index.html#contact"
+      ]
+    ]
+  },
+  {
+    "img": "paths-partners",
+    "alt": "People discussing a project around a meeting table",
+    "who": "I work with a community or public partner.",
+    "sub": "Find information on board representation and governance.",
+    "links": [
+      [
+        "Meet the board",
+        "Learn how directors are appointed.",
+        "index.html#board"
+      ],
+      [
+        "Browse governing records",
+        "Find bylaws, the agreement, and policies.",
+        "documents.html#governing"
+      ],
+      [
+        "Visit the City of Craig",
+        "Explore the city's economic development information.",
+        "https://discovercraig.com/"
+      ]
+    ]
+  },
+  {
+    "img": "paths-researchers",
+    "alt": "Shelves of books in a public reference collection",
+    "who": "I’m looking for a public record.",
+    "sub": "Search by title, type, or year.",
+    "links": [
+      [
+        "Search the archive",
+        "Use a title or date to narrow your results.",
+        "index.html#finder"
+      ],
+      [
+        "Browse minutes by year",
+        "Jump to the date-based shortcuts.",
+        "documents.html#years"
+      ],
+      [
+        "Get help with an official copy",
+        "Find MEDA’s current board contact.",
+        "index.html#contact"
+      ]
+    ]
+  },
+  {
+    "img": "paths-board",
+    "alt": "A group in discussion around a conference table",
+    "who": "I want to understand MEDA’s governance.",
+    "sub": "See who appoints the board and where to find its records.",
+    "links": [
+      [
+        "Board and appointments",
+        "Learn about local representation.",
+        "index.html#board"
+      ],
+      [
+        "Find the bylaws",
+        "Browse the bylaws entry in the archive.",
+        "documents.html?q=bylaws#archive"
+      ],
+      [
+        "Establishment agreement",
+        "Find the founding document entry.",
+        "documents.html?q=establishment#archive"
+      ]
+    ]
+  }
+];
+const pWho=document.getElementById('pWho'),pSub=document.getElementById('pSub'),pLinks=document.getElementById('pLinks'),pImg=document.getElementById('pImg');
+function renderPath(i){const d=PATHS[i];
+  pImg.src=px(d.img,1000);pImg.alt=d.alt;pWho.textContent=d.who;pSub.textContent=d.sub;
+  pLinks.innerHTML=d.links.map((l,n)=>`<a class="path-link" href="${l[2]}"><span class="num">${String(n+1).padStart(2,'0')}</span><span><strong>${l[0]}</strong><em>${l[1]}</em></span>${ARROW}</a>`).join('');}
+document.querySelectorAll('.path').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.path').forEach(x=>x.setAttribute('aria-selected','false'));
+  b.setAttribute('aria-selected','true');renderPath(+b.dataset.p);}));
+renderPath(0);
+
+/* ── 04 Pillars ── */
+const PILLARS=[
+  {
+    "t": "Economic transition",
+    "img": "about-transition",
+    "alt": "Industrial power station chimneys",
+    "d": "MEDA was formed to help address economic losses tied to the closure of Craig Station.",
+    "foot": "Why MEDA formed",
+    "url": "index.html#evidence"
+  },
+  {
+    "t": "Settlement stewardship",
+    "img": "about-stewardship",
+    "alt": "A person reviewing charts and notes",
+    "d": "The authority manages and invests settlement funds and uses returns for local economic development.",
+    "foot": "How funds are used",
+    "url": "index.html#evidence"
+  },
+  {
+    "t": "Local priorities",
+    "img": "about-priorities",
+    "alt": "A worker building a project in a workshop",
+    "d": "MEDA focuses on job creation, capital investment, and tax base stability.",
+    "foot": "Explore priorities",
+    "url": "index.html#impact"
+  },
+  {
+    "t": "Public governance",
+    "img": "about-governance",
+    "alt": "People reviewing papers around a meeting table",
+    "d": "A volunteer board appointed by local public bodies oversees MEDA.",
+    "foot": "Board and partners",
+    "url": "index.html#board"
+  }
+];
+const PBAR=['var(--p3)','var(--acc)','var(--mint)','var(--warm)'];
+document.getElementById('pillars-grid').innerHTML=PILLARS.map((p,i)=>`
+ <a class="pillar rise" href="${p.url}" aria-label="${p.t} — ${p.foot}">
+   <div class="pic"><img src="${px(p.img,900)}" alt="${p.alt}" loading="lazy"><span class="no">0${i+1}</span></div>
+   <span class="bar" style="background:${PBAR[i]}"></span>
+   <div class="in">
+     <h3>${p.t}</h3><p>${p.d}</p>
+     <div class="foot"><span>${p.foot}</span><span class="arrow" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+   </div>
+ </a>`).join('');
+
+/* ── 05 Evidence → Action ── */
+const CASES=[
+  {
+    "stage": "Receive funds",
+    "img": "stage-settlement",
+    "alt": "A mountain ridge in low cloud",
+    "blurb": "Manage settlement funds tied to the energy transition.",
+    "kicker": "Settlement",
+    "title": "A local response",
+    "quote": "Craig and Moffat County established MEDA to help address the economic effects of the Craig Station closure.",
+    "detail": "MEDA manages settlement funds on behalf of the City of Craig and Moffat County. The funds provide a long-term resource for local economic development.",
+    "metrics": [
+      [
+        "Craig",
+        "City partner"
+      ],
+      [
+        "Moffat",
+        "County partner"
+      ],
+      [
+        "Local",
+        "Public authority"
+      ]
+    ]
+  },
+  {
+    "stage": "Invest for the long term",
+    "img": "stage-invest",
+    "alt": "A person marking investment charts on a desk",
+    "blurb": "Invest the funds and manage their returns.",
+    "kicker": "Stewardship",
+    "title": "Invest the funds",
+    "quote": "MEDA’s investment approach is designed to support the region over time.",
+    "detail": "MEDA aims to preserve the settlement principal and primarily uses investment returns for economic development initiatives and authority operations.",
+    "metrics": [
+      [
+        "Principal",
+        "Long-term stewardship"
+      ],
+      [
+        "Returns",
+        "Local investment"
+      ],
+      [
+        "Board",
+        "Public oversight"
+      ]
+    ]
+  },
+  {
+    "stage": "Support local priorities",
+    "img": "stage-support",
+    "alt": "People reviewing documents at a table",
+    "blurb": "Put investment returns to work for Craig and Moffat County.",
+    "kicker": "Local priorities",
+    "title": "Support development",
+    "quote": "MEDA’s work focuses on jobs, investment, and tax base stability.",
+    "detail": "Projects are assessed for how they can benefit the local economy, such as supporting job growth, new capital investment, or taxable value.",
+    "metrics": [
+      [
+        "Jobs",
+        "Employment"
+      ],
+      [
+        "Capital",
+        "Business investment"
+      ],
+      [
+        "Tax base",
+        "Public services"
+      ]
+    ]
+  },
+  {
+    "stage": "Document decisions",
+    "img": "stage-review",
+    "alt": "A team looking at project materials together",
+    "blurb": "Use public records to follow the authority’s work.",
+    "kicker": "Governance",
+    "title": "Follow the board",
+    "quote": "Meeting minutes and governing documents help residents understand how MEDA works.",
+    "detail": "Find the type of record you need in the archive or contact the board for an official copy.",
+    "metrics": [
+      [
+        "Minutes",
+        "Meeting records"
+      ],
+      [
+        "Bylaws",
+        "Board governance"
+      ],
+      [
+        "Policies",
+        "Operating guidance"
+      ]
+    ]
+  }
+];
+document.getElementById('track').innerHTML=CASES.map((c,i)=>`
+ <button class="stage" role="tab" aria-selected="${i===0}" data-s="${i}">
+   <span class="tick">STEP 0${i+1}</span>
+   <span class="bulb"><img src="${px(c.img,400)}" alt="${c.alt}" loading="lazy"></span>
+   <h4>${c.stage}</h4><p>${c.blurb}</p>
+ </button>`).join('');
+const cK=document.getElementById('cKicker'),cT=document.getElementById('cTitle'),cQ=document.getElementById('cQuote'),
+      cD=document.getElementById('cDetail'),cM=document.getElementById('cMetrics'),cP=document.getElementById('cProg'),cI=document.getElementById('cImg');
+let stage=0,timer=null;
+function renderCase(i){stage=i;const c=CASES[i];
+  cK.textContent=c.kicker;cT.textContent=c.title;cQ.textContent=c.quote;cD.textContent=c.detail;cI.src=px(c.img,900);cI.alt=c.alt;
+  cM.innerHTML=c.metrics.map(m=>`<div><b>${m[0]}</b><span>${m[1]}</span></div>`).join('');
+  [...cP.children].forEach((el,n)=>el.classList.toggle('on',n<=i));
+  document.querySelectorAll('.stage').forEach((s,n)=>s.setAttribute('aria-selected',n===i?'true':'false'));}
+document.querySelectorAll('.stage').forEach(s=>s.addEventListener('click',()=>{renderCase(+s.dataset.s);restart();}));
+function restart(){clearInterval(timer);if(!reduced&&document.documentElement.dataset.motion!=='off'&&!document.querySelector('.pipe-wrap').matches(':focus-within, :hover'))timer=setInterval(()=>renderCase((stage+1)%CASES.length),5400);}
+renderCase(0);restart();
+const pw=document.querySelector('.pipe-wrap');
+pw.addEventListener('mouseenter',()=>clearInterval(timer));
+pw.addEventListener('mouseleave',restart);
+pw.addEventListener('focusin',()=>clearInterval(timer));
+pw.addEventListener('focusout',()=>requestAnimationFrame(restart));
+
+/* ── 06 Initiatives ── */
+const INITS=[
+  {
+    "cls": "feature",
+    "tag": "Board records",
+    "tc": "var(--p1)",
+    "t": "Meeting minutes",
+    "img": "card-minutes",
+    "alt": "A group reviewing documents together",
+    "d": "Find the latest example and browse earlier board meeting records by year.",
+    "cta": "Browse minutes",
+    "url": "documents.html?type=minutes#archive"
+  },
+  {
+    "cls": "",
+    "tag": "Governance",
+    "tc": "var(--acc)",
+    "t": "Bylaws",
+    "img": "card-bylaws",
+    "alt": "A close-up of a ruled paper record",
+    "d": "Find the document that describes how the board operates.",
+    "cta": "Find bylaws",
+    "url": "documents.html?q=bylaws#archive"
+  },
+  {
+    "cls": "",
+    "tag": "Founding",
+    "tc": "var(--acc)",
+    "t": "Establishment agreement",
+    "img": "card-founding",
+    "alt": "A document being exchanged across a desk",
+    "d": "Find the founding agreement between the City of Craig and Moffat County.",
+    "cta": "Find the agreement",
+    "url": "documents.html?q=establishment#archive"
+  },
+  {
+    "cls": "wide",
+    "tag": "Policies",
+    "tc": "var(--acc)",
+    "t": "Organizational policies",
+    "img": "card-policies",
+    "alt": "A person reviewing a printed report",
+    "pos": "center 38%",
+    "d": "Explore the policies category in the public archive.",
+    "cta": "Browse policies",
+    "url": "documents.html?q=policies#archive"
+  },
+  {
+    "cls": "wide accent",
+    "tag": "Procedures",
+    "tc": "var(--acc)",
+    "t": "Administrative procedures",
+    "img": "about-governance",
+    "alt": "People in a meeting discussing documents and procedures",
+    "pos": "center 26%",
+    "d": "Find the procedures category and see how its records are organized.",
+    "cta": "Find procedures",
+    "url": "documents.html?q=procedures#archive"
+  },
+  {
+    "cls": "",
+    "tag": "Records help",
+    "tc": "var(--acc)",
+    "t": "Need an official copy?",
+    "img": "documents-contact",
+    "alt": "A woman working on a laptop while helping with questions and document requests",
+    "pos": "center 24%",
+    "d": "Ask the board contact for a specific record or accessible copy.",
+    "cta": "Contact MEDA",
+    "url": "index.html#contact"
+  }
+];
+document.getElementById('inits').innerHTML=INITS.map(i=>`
+ <a class="init ${i.cls} rise" href="${i.url}">
+   <div class="pic ph"><img src="${px(i.img,800)}" alt="${i.alt}" loading="lazy" style="object-position:${i.pos||'center 22%'}"><span class="tag" style="background:${i.tc}">${i.tag}</span></div>
+   <div class="in"><h3>${i.t}</h3><p>${i.d}</p><span class="go">${i.cta} ${ARROW}</span></div>
+ </a>`).join('');
+
+/* ── 08 People ── */
+const PARTNERS=[
+  {
+    "img": "board-city",
+    "alt": "A civic-style meeting with a speaker and attendees",
+    "t": "City of Craig",
+    "d": "The Craig City Council appoints members to the authority’s board.",
+    "badge": "City appointments"
+  },
+  {
+    "img": "board-county",
+    "alt": "A working group seen from above around a table",
+    "t": "Moffat County",
+    "d": "The Moffat County Board of County Commissioners appoints members.",
+    "badge": "County appointments"
+  },
+  {
+    "img": "board-school",
+    "alt": "People working together in a classroom",
+    "t": "School District RE-1",
+    "d": "The Moffat County School District appoints a board representative.",
+    "badge": "Education"
+  },
+  {
+    "img": "board-volunteers",
+    "alt": "People gathered around a table for a discussion",
+    "t": "Volunteer directors",
+    "d": "Five directors oversee the work of the authority.",
+    "badge": "Board service"
+  },
+  {
+    "img": "board-stewardship",
+    "alt": "Charts and notes arranged on a working table",
+    "t": "Settlement stewardship",
+    "d": "The board oversees the funds and the use of their investment returns.",
+    "badge": "Oversight"
+  },
+  {
+    "img": "board-records",
+    "alt": "An overhead view of a laptop and desk materials",
+    "t": "Public records",
+    "d": "Meeting minutes and governing documents help the public follow the board’s work.",
+    "badge": "Transparency"
+  }
+];
+document.getElementById('rail').innerHTML=PARTNERS.map(p=>`
+ <article class="person">
+   <div class="bg"><img src="${px(p.img,700)}" alt="${p.alt}" loading="lazy"></div>
+   <div class="in"><h4>${p.t}</h4><p>${p.d}</p><span class="badge">${p.badge}</span></div>
+ </article>`).join('');
+const step=()=>(document.querySelector('.person')?.offsetWidth||280)+20;
+document.getElementById('railPrev').onclick=()=>document.getElementById('rail').scrollBy({left:-step(),behavior:reduced?'auto':'smooth'});
+document.getElementById('railNext').onclick=()=>document.getElementById('rail').scrollBy({left:step(),behavior:reduced?'auto':'smooth'});
+
+/* ── 09 Posts ── */
+const POSTS=[
+  {
+    "img": "guide-minutes",
+    "alt": "A person writing notes at a desk",
+    "kicker": "Minutes",
+    "kc": "var(--p1)",
+    "meta": "Records guide",
+    "t": "Find meeting minutes by year",
+    "cta": "Browse years",
+    "url": "documents.html#years"
+  },
+  {
+    "img": "guide-governing",
+    "alt": "A close-up of a printed historical document",
+    "kicker": "Governance",
+    "kc": "var(--acc)",
+    "meta": "Document guide",
+    "t": "Find bylaws and founding documents",
+    "cta": "View governing documents",
+    "url": "documents.html#governing"
+  },
+  {
+    "img": "guide-help",
+    "alt": "A person at a laptop using a phone",
+    "kicker": "Help",
+    "kc": "var(--p1)",
+    "meta": "Records assistance",
+    "t": "Ask for an official or accessible copy",
+    "cta": "Contact MEDA",
+    "url": "index.html#contact"
+  }
+];
+document.getElementById('posts').innerHTML=POSTS.map(p=>`
+ <a class="post rise" href="${p.url}">
+   <div class="thumb ph"><img src="${px(p.img,800)}" alt="${p.alt}" loading="lazy"><span class="kicker" style="background:${p.kc}">${p.kicker}</span></div>
+   <div class="body"><time>${p.meta}</time><h3>${p.t}</h3>
+     <span class="go">${p.cta} ${ARROW}</span></div>
+ </a>`).join('');
+
+/* ── Marquee ── */
+const mq=document.getElementById('mq');
+[...mq.children].forEach(item=>{const copy=item.cloneNode(true);copy.setAttribute('aria-hidden','true');mq.append(copy);});
+
+/* ── Reveal ── */
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),
+ {threshold:.1,rootMargin:'0px 0px -40px'});
+document.querySelectorAll('.rise').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el);});
+
+/* ── Impact counters: fast countdown, settling on the final number ── */
+const co=new IntersectionObserver(es=>es.forEach(en=>{
+ if(!en.isIntersecting)return;
+ const el=en.target,target=+el.dataset.count,suf=el.dataset.suffix||'';
+ const paint=v=>el.innerHTML=v+(suf?`<span class="suf">${suf}</span>`:'');
+ co.unobserve(el);
+ if(reduced){paint(target);return;}
+ el.parentElement.classList.add('spin');
+ const digits=String(target).length, from=Math.max(target*4, Math.pow(10,digits)-1);
+ const dur=1500, t0=performance.now();
+ const tick=now=>{
+   const p=Math.min((now-t0)/dur,1);
+   if(p<.62){                                   // fast blur of numbers spinning down
+     const lo=target, hi=from-(from-target)*(p/.62);
+     paint(Math.round(lo+Math.random()*(hi-lo)));
+     requestAnimationFrame(tick);
+   }else{                                       // decelerate onto the real figure
+     const q=(p-.62)/.38, e=1-Math.pow(1-q,3);
+     paint(Math.round(target+(from-target)*.16*(1-e)));
+     if(p<1)requestAnimationFrame(tick);
+     else{paint(target);el.parentElement.classList.remove('spin');}
+   }
+ };
+ requestAnimationFrame(tick);
+}),{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+
+const root=document.documentElement;
+
+/* ══════════════ KEYBOARD SUPPORT FOR TABLISTS (WCAG 2.2) ══════════════ */
+function wireTabs(selector,panelId){
+  const items=[...document.querySelectorAll(selector)];
+  const tabPanel=document.getElementById(panelId);
+  function update(){
+    items.forEach(item=>{
+      const active=item.getAttribute('aria-selected')==='true';
+      item.tabIndex=active?0:-1;
+      if(active)tabPanel.setAttribute('aria-labelledby',item.id);
+    });
+  }
+  items.forEach((item,i)=>{
+    item.id=panelId+'-tab-'+i;
+    item.setAttribute('aria-controls',panelId);
+    item.addEventListener('click',update);
+    item.addEventListener('keydown',event=>{
+      const keys={ArrowRight:(i+1)%items.length,ArrowDown:(i+1)%items.length,
+        ArrowLeft:(i+items.length-1)%items.length,ArrowUp:(i+items.length-1)%items.length,
+        Home:0,End:items.length-1};
+      if(!Object.hasOwn(keys,event.key))return;
+      event.preventDefault();
+      const next=items[keys[event.key]];
+      next.click();
+      next.focus();
+    });
+  });
+  if(panelId==='casePanel'){
+    const observer=new MutationObserver(update);
+    items.forEach(item=>observer.observe(item,{attributes:true,attributeFilter:['aria-selected']}));
+  }
+  update();
+}
+wireTabs('.path','pathPanel');
+wireTabs('.stage','casePanel');
+
+/* ══════════════ HEURISTICS ══════════════ */
+/* H3 user control — close the panel explicitly */
+
+
+/* Only the homepage exists for now, so "Home" stays selected at all times.
+   No scroll spy: the header state never changes while scrolling. */
+
+/* H3 user control — back to top */
+const toTop=document.getElementById('toTop');
+toTop.addEventListener('click',()=>{
+  scrollTo({top:0,behavior:root.getAttribute('data-motion')==='off'?'auto':'smooth'});
+  document.getElementById('main-content').focus();
+});
+addEventListener('scroll',()=>toTop.classList.toggle('show',scrollY>700),{passive:true});
+
+/* WCAG 2.2.2 — one control pauses all background motion */
+const motionBtn=document.getElementById('motionBtn'),motionLabel=document.getElementById('motionLabel');
+function syncMotionControl(paused){
+  motionBtn.setAttribute('aria-pressed',String(paused));
+  motionLabel.textContent=paused?'Play background motion':'Pause background motion';
+  motionBtn.querySelector('svg').innerHTML=paused
+    ? '<path d="M7 4v16l13-8z"/>'
+    : '<rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/>';
+}
+syncMotionControl(reduced);
+motionBtn.addEventListener('click',()=>{
+  const paused=motionBtn.getAttribute('aria-pressed')!=='true';
+  root.dataset.motion=paused?'off':'on';
+  syncMotionControl(paused);
+  if(hv){paused?hv.pause():hv.play().catch(()=>{});}
+  paused?clearInterval(timer):restart();
+});
+
+/* Archive shortcut */
+const archiveForm=document.getElementById('archiveForm');
+const yearInput=document.getElementById('recordYear');
+const yearError=document.getElementById('yearError');
+const topicButtons=[...document.querySelectorAll('[data-topic]')];
+let selectedTopic='';
+topicButtons.forEach(button=>button.addEventListener('click',()=>{
+  selectedTopic=button.dataset.topic;
+  topicButtons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+}));
+function setYearError(show){
+  if(show){yearError.dataset.show='true';archiveForm.dataset.invalid='true';}
+  else{delete yearError.dataset.show;delete archiveForm.dataset.invalid;}
+  yearInput.setAttribute('aria-invalid',String(show));
+  if(show)yearInput.setAttribute('aria-describedby','yearError');
+  else yearInput.removeAttribute('aria-describedby');
+}
+yearInput.addEventListener('input',()=>setYearError(false));
+archiveForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  if(!yearInput.checkValidity()){
+    setYearError(true);
+    yearInput.focus();
+    return;
+  }
+  const q=[selectedTopic,yearInput.value.trim()].filter(Boolean).join(' ');
+  location.assign('documents.html'+(q?'?'+new URLSearchParams({q}):'')+'#archive');
+});
+document.getElementById('finderForm').addEventListener('submit',event=>{
+  event.preventDefault();
+  const query=event.submitter?.value||document.getElementById('q').value.trim();
+  location.assign('documents.html'+(query?'?'+new URLSearchParams({q:query}):'')+'#archive');
+});
+
+/* ══════════════════════════════════════════════════════════
+   MOBILE EXPERIENCE — drawer + physical card decks
+   Only ever runs under 760px; desktop behaviour is unchanged.
+   ══════════════════════════════════════════════════════════ */
+const MQ=matchMedia('(max-width:760px)');
+
+/* ── drawer ── */
+const mnav=document.getElementById('mobileNav');
+const burger=document.querySelector('.burger');
+let lastFocus=null;
+function openMenu(open){
+  if(open){
+    lastFocus=document.activeElement;
+    mnav.hidden=false;
+    requestAnimationFrame(()=>mnav.setAttribute('data-open','true'));
+    document.body.style.overflow='hidden';
+    burger.setAttribute('aria-expanded','true');
+    setTimeout(()=>mnav.querySelector('.mnav-links a').focus(),260);
+  }else{
+    mnav.removeAttribute('data-open');
+    document.body.style.overflow='';
+    burger.setAttribute('aria-expanded','false');
+    setTimeout(()=>{mnav.hidden=true;},360);
+    if(lastFocus)lastFocus.focus();
+  }
+}
+burger.setAttribute('aria-expanded','false');
+burger.setAttribute('aria-controls','mobileNav');
+burger.addEventListener('click',()=>openMenu(mnav.hidden));
+mnav.addEventListener('click',e=>{
+  if(e.target.closest('[data-close]')||e.target.closest('.mnav-links a, .mnav-foot a'))openMenu(false);
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&!mnav.hidden)openMenu(false);
+  if(e.key==='Tab'&&!mnav.hidden){          /* keep focus inside the drawer */
+    const f=[...mnav.querySelectorAll('a,button')].filter(el=>el.offsetParent!==null);
+    if(!f.length)return;
+    const first=f[0],last=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
+});
+
+/* ── card decks ── */
+const TILT=[0,-2.8,2.4,-1.6];
+const DECK_DEFS=[
+  {id:'pillars-grid',noun:'step'},
+  {id:'inits',       noun:'record type'},
+  {id:'posts',       noun:'guide'}
+];
+const decks=[];
+
+function makeDeck(def){
+  const el=document.getElementById(def.id);
+  if(!el)return null;
+  const cards=[...el.children];
+  if(cards.length<2)return null;
+  const d={el,cards,i:0,nav:null,noun:def.noun};
+
+  const nav=document.createElement('div');
+  nav.className='deck-nav';
+  nav.innerHTML=
+    '<button class="deck-btn" data-dir="-1" aria-label="Previous '+def.noun+'"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>'+
+    '<div style="display:flex;align-items:center;gap:12px">'+
+      '<span class="deck-dots" aria-hidden="true">'+cards.map(()=>'<i></i>').join('')+'</span>'+
+      '<span class="deck-count" role="status" aria-live="polite"></span>'+
+    '</div>'+
+    '<button class="deck-btn" data-dir="1" aria-label="Next '+def.noun+'"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>';
+  const hint=document.createElement('p');
+  hint.className='deck-hint';
+  hint.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 4 12l5 6M15 6l5 6-5 6"/></svg> Swipe or use the arrows';
+  d.nav=nav; d.hint=hint;
+  nav.addEventListener('click',e=>{
+    const b=e.target.closest('[data-dir]'); if(!b)return;
+    move(d,+b.dataset.dir);
+  });
+  return d;
+}
+
+function layout(d){
+  const n=d.cards.length;
+  let tallest=0;
+  d.cards.forEach((c,idx)=>{
+    const pos=(idx-d.i+n)%n;
+    c.style.setProperty('--o',Math.min(pos,3));
+    c.style.setProperty('--r',pos===0?0:TILT[Math.min(pos,3)]);
+    c.style.setProperty('--x','0px');
+    c.style.setProperty('--dr','0deg');
+    c.style.zIndex=String(n-Math.min(pos,3));
+    c.dataset.front=pos===0?'true':'false';
+    c.dataset.stacked=pos>2?'hidden':'shown';
+    c.inert=pos!==0;
+    c.setAttribute('aria-hidden',pos===0?'false':'true');
+    c.classList.add('in');                    /* decks are always revealed */
+    if(pos===0)tallest=Math.max(tallest,c.offsetHeight);
+  });
+  if(tallest)d.el.style.setProperty('--deck-h',(tallest+26)+'px');
+  d.nav.querySelectorAll('.deck-dots i').forEach((dot,k)=>dot.classList.toggle('on',k===d.i));
+  d.nav.querySelector('.deck-count').textContent=(d.i+1)+' / '+n;
+}
+function move(d,dir){
+  const n=d.cards.length;
+  d.i=(d.i+dir+n)%n;
+  layout(d);
+}
+
+/* drag / swipe on the front card */
+function attachSwipe(d){
+  let x0=null,y0=null,dx=0,active=null,locked=false;
+  const el=d.el;
+  const down=e=>{
+    const t=e.touches?e.touches[0]:e;
+    active=d.cards[d.i];
+    if(!active)return;
+    x0=t.clientX;y0=t.clientY;dx=0;locked=false;
+  };
+  const mv=e=>{
+    if(x0===null)return;
+    const t=e.touches?e.touches[0]:e;
+    dx=t.clientX-x0;
+    const dy=t.clientY-y0;
+    if(!locked){
+      if(Math.abs(dy)>Math.abs(dx)){x0=null;return;}   /* vertical scroll wins */
+      locked=true;el.classList.add('dragging');
+    }
+    if(e.cancelable)e.preventDefault();
+    active.style.setProperty('--x',dx+'px');
+    active.style.setProperty('--dr',(dx*0.035)+'deg');
+  };
+  const up=()=>{
+    if(x0===null){el.classList.remove('dragging');return;}
+    el.classList.remove('dragging');
+    const threshold=Math.min(110,el.offsetWidth*0.26);
+    if(Math.abs(dx)>threshold){
+      active.style.setProperty('--x',(dx>0?600:-600)+'px');
+      active.style.setProperty('--dr',(dx>0?14:-14)+'deg');
+      setTimeout(()=>move(d,dx>0?-1:1),170);
+    }else{
+      active.style.setProperty('--x','0px');
+      active.style.setProperty('--dr','0deg');
+    }
+    x0=null;dx=0;
+    /* a drag must never fire the card's link */
+    if(locked){const a=active;a.addEventListener('click',stop,{once:true,capture:true});
+      setTimeout(()=>a.removeEventListener('click',stop,true),50);}
+  };
+  const stop=e=>{e.preventDefault();e.stopPropagation();};
+  el.addEventListener('touchstart',down,{passive:true});
+  el.addEventListener('touchmove',mv,{passive:false});
+  el.addEventListener('touchend',up);
+  el.addEventListener('mousedown',down);
+  addEventListener('mousemove',e=>{if(x0!==null)mv(e);});
+  addEventListener('mouseup',up);
+  d._swipe=true;
+}
+
+function enableDecks(){
+  DECK_DEFS.forEach(def=>{
+    if(decks.some(d=>d.el.id===def.id))return;
+    const d=makeDeck(def);
+    if(!d)return;
+    d.el.classList.add('deck');
+    d.el.after(d.hint);
+    d.el.after(d.nav);
+    if(!d._swipe)attachSwipe(d);
+    layout(d);
+    decks.push(d);
+  });
+}
+function disableDecks(){
+  while(decks.length){
+    const d=decks.pop();
+    d.el.classList.remove('deck');
+    d.el.style.removeProperty('--deck-h');
+    d.cards.forEach(c=>{
+      ['--o','--r','--x','--dr'].forEach(v=>c.style.removeProperty(v));
+      c.style.zIndex='';
+      delete c.dataset.front;delete c.dataset.stacked;
+      c.inert=false;
+      c.removeAttribute('aria-hidden');
+    });
+    d.nav.remove();d.hint.remove();
+  }
+}
+function syncMobile(){
+  if(MQ.matches)enableDecks(); else {disableDecks(); if(!mnav.hidden&&innerWidth>1100)openMenu(false);}
+  decks.forEach(layout);
+}
+/* run after the card templates have been written into the DOM */
+requestAnimationFrame(syncMobile);
+addEventListener('load',()=>decks.forEach(layout));
+MQ.addEventListener('change',syncMobile);
+matchMedia('(min-width:1101px)').addEventListener('change',e=>{if(e.matches&&!mnav.hidden)openMenu(false);});
+let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>decks.forEach(layout),160);},{passive:true});
+</script>
+<script src="assets/meda.js"></script>
+</body>
+</html>
