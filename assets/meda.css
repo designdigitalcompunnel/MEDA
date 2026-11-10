@@ -193,3 +193,57 @@ footer { background: var(--deep-navy); }
 
 /* Concept-only controls retain their visuals but aren't actionable. */
 #themeBtn, #a11y-fab { pointer-events: none; cursor: default; }
+
+
+/* MEDA 2026 enhancement: selective orange contrast with deep blue and sharp black.
+   Shared between homepage and documents; no structural/layout changes. */
+:root {
+  --meda-orange: #FF7849;
+  --meda-orange-light: #FFAD88;
+  --meda-orange-dark: #A53813;
+  --meda-sharp-black: #0B0D13;
+}
+/* High-visibility accents against the navy hero. */
+.hero .eyebrow::before { background: var(--meda-orange) !important; }
+.hero h1 .it { color: var(--meda-orange-light) !important; }
+.hero .btn--white .dot, .nav .btn .dot, footer .btn--white .dot { background: var(--meda-orange) !important; color: var(--meda-sharp-black) !important; }
+.hero .btn--white .dot svg, .nav .btn .dot svg, footer .btn--white .dot svg { color: var(--meda-sharp-black) !important; stroke: currentColor !important; }
+.hero .btn--white .dot svg *, .nav .btn .dot svg *, footer .btn--white .dot svg * { color: var(--meda-sharp-black) !important; }
+/* Hero strip: preserve media visibility and create clear labels. */
+.strip .ph::after { background: linear-gradient(to top, rgba(11,13,19,.82) 0%, rgba(11,13,19,.38) 31%, transparent 72%) !important; inset: 20% 0 0; }
+.strip .ph img { object-position: center center !important; filter: saturate(1.06) contrast(1.025); }
+.strip .ph { transition: border-color .3s ease, box-shadow .3s ease; }
+.strip .ph:hover { border-color: var(--meda-orange); box-shadow: inset 0 0 0 1px var(--meda-orange); }
+.strip .cap { display: flex; align-items: center; gap: 8px; }
+.strip .cap::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--meda-orange); flex: none; }
+/* Supporting highlights, while default headings, tabs and primary actions stay MEDA blue. */
+.uline::after { background: linear-gradient(90deg, var(--meda-orange) 0%, #FFD0BC 100%) !important; }
+.path[aria-selected="true"] { box-shadow: inset 0 -3px 0 var(--meda-orange); }
+#progress { background: linear-gradient(90deg, var(--meda-orange), #E35B2D 35%, #145DC1) !important; }
+.mint-rule { background: linear-gradient(90deg, var(--meda-orange) 0%, #FFAD88 22%, #A9D7FF 50%, #E7F1FF 75%, transparent 100%) !important; }
+footer .foot-col h5 { color: var(--meda-orange-light) !important; }
+footer .dev-bars rect { fill: var(--meda-orange) !important; opacity: .22; }
+footer .social-icon:hover { border-color: var(--meda-orange) !important; background: rgba(255,120,73,.12) !important; color: #FFFFFF !important; }
+@media (prefers-reduced-motion: reduce) {
+  .strip .ph { transition: none; }
+}
+
+
+/* v11: Slightly wider outer gutters and crisper MEDA blue.
+   Retains the original full-quality media, layout and animations. */
+:root {
+  --p1: #003B91;
+  --p2: #115CC2;
+  --p3: #176EE5;
+  --p4: #438FF0;
+  --deep-navy: #042968;
+  --link-ink: #1257B5;
+  --focus: #176EE5;
+}
+.wrap {
+  max-width: 1160px;
+  padding-inline: max(var(--pad), 24px);
+}
+@media (max-width: 600px) {
+  .wrap { padding-inline: max(var(--pad), 18px); }
+}

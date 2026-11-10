@@ -15,10 +15,6 @@ Stock material is used under the [Pexels License](https://www.pexels.com/license
 | Local image | Pexels source |
 |---|---|
 | `hero-records.webp` | [Photo 5387236](https://www.pexels.com/photo/5387236/) |
-| `strip-landscape.webp` | [Photo 34332279](https://www.pexels.com/photo/34332279/) |
-| `strip-board.webp` | [Photo 1181304](https://www.pexels.com/photo/1181304/) |
-| `strip-records.webp` | [Photo 7545311](https://www.pexels.com/photo/7545311/) |
-| `strip-partners.webp` | [Photo 3184418](https://www.pexels.com/photo/3184418/) |
 | `paths-residents.webp` | [Photo 7841783](https://www.pexels.com/photo/7841783/) |
 | `paths-businesses.webp` | [Photo 7654584](https://www.pexels.com/photo/7654584/) |
 | `paths-partners.webp` | [Photo 3184291](https://www.pexels.com/photo/3184291/) |
@@ -27,7 +23,7 @@ Stock material is used under the [Pexels License](https://www.pexels.com/license
 | `finder-desk.webp` | [Photo 389818](https://www.pexels.com/photo/389818/) |
 | `about-transition.webp` | [Photo 459728](https://www.pexels.com/photo/459728/) |
 | `about-stewardship.webp` | [Photo 3862365](https://www.pexels.com/photo/3862365/) |
-| `about-priorities.webp` | [Photo 4246113](https://www.pexels.com/photo/4246113/) |
+| `about-priorities.webp` | User-supplied Adobe Stock image (asset 2195078977); confirm licensing for deployment |
 | `about-governance.webp` | [Photo 1181619](https://www.pexels.com/photo/1181619/) |
 | `stage-settlement.webp` | [Photo 691668](https://www.pexels.com/photo/691668/) |
 | `stage-invest.webp` | [Photo 669615](https://www.pexels.com/photo/669615/) |
@@ -62,3 +58,32 @@ Stock material is used under the [Pexels License](https://www.pexels.com/license
 ## Typefaces
 
 Bricolage Grotesque, Fraunces, and Open Sans retain the template typography. Their SIL Open Font License files are included in `assets/fonts/`. The demonstration PDFs embed Liberation Sans.
+
+## User-supplied homepage media (November 2026)
+
+- `assets/media/colorado-landscape.mp4` and its poster: optimized from user-supplied `Homepage hero video(1).mp4` (geographic filming location unverified).
+- `assets/media/hero-records.webp`: optimized from user-supplied `Hero Latest minutes card(1).jpeg`.
+
+These replace the previous files at the same paths.
+
+
+## Homepage 02 — Start here (user-supplied assets)
+- `paths-residents.webp` — optimized from the user-provided `Residents.jpeg`.
+- `paths-businesses.webp` — optimized from the user-provided `local business.jpeg`.
+- `paths-partners.webp` — optimized from the user-provided `civic partners.jpeg`.
+- `paths-researchers.webp` — optimized from the user-provided `researchers.jpeg`.
+- `paths-board.webp` — optimized from the user-provided `Board and governance.png`.
+
+## Homepage 04 — About MEDA image update
+- `about-priorities.webp` — optimized from user-provided `AdobeStock_2195078977.jpeg` for the third card, “Local priorities.”
+
+- `assets/media/documents-guide.webp`: optimized from user-supplied `AdobeStock_2240146696.jpeg` for the Public Documents Record Guide section.
+
+### Homepage hero strip — user-supplied replacement images
+
+- `hero-strip-local-priorities.webp` — uploaded `local priority(1).jpeg`; resized to 1280 × 660 WebP with slight color/contrast enhancement; used for **Local priorities**.
+- `hero-strip-board-meetings.webp` — uploaded `BOard meeting(1).jpeg`; resized to 1280 × 660 WebP with slight color/contrast enhancement; used for **Board meetings**.
+- `hero-strip-public-records.webp` — uploaded `public records(1).jpeg`; resized to 1280 × 660 WebP with slight color/contrast enhancement; used for **Public records**.
+- `hero-strip-community-partners.webp` — uploaded `Community partners(1).jpeg`; resized to 1280 × 660 WebP with slight color/contrast enhancement; used for **Community partners**.
+
+Confirm appropriate licensing/usage rights for supplied stock imagery before publishing.
